@@ -35,13 +35,21 @@ An advanced computer vision system for ShellHacks 2025 that recognizes hand shad
 
 ## 🚀 Quick Start (Advanced System)
 
-### 1. Setup Environment
+### ⚡ One-Click Setup (Recommended)
 
 ```bash
 # Clone and navigate to project
-cd gesture-puppets
+git clone https://github.com/pablomoli/Shadow-Vision.git
+cd Shadow-Vision
 
-# Create virtual environment (if not exists)
+# One-click setup and demo launcher
+python quick_start.py
+```
+
+### 🔧 Manual Setup
+
+```bash
+# Create virtual environment
 python -m venv .venv
 
 # Activate virtual environment
@@ -53,6 +61,16 @@ source .venv/bin/activate
 # Install dependencies
 pip install -r requirements.txt
 pip install scikit-image joblib
+
+# Validate setup
+python validate_setup.py
+```
+
+### 🐳 Docker Setup
+
+```bash
+# Run with Docker (alternative)
+docker-compose up --build
 ```
 
 ### 2. Advanced Model Training (Already Completed!)
