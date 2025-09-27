@@ -1,0 +1,22 @@
+{
+  "name": "gesture-puppets-frontend",
+  "version": "1.0.0",
+  "description": "Hand gesture recognition to 3D animation frontend",
+  "main": "frontend/src/main.js",
+  "scripts": {
+    "dev": "vite frontend",
+    "build": "vite build frontend",
+    "preview": "vite preview frontend",
+    "serve": "python -m http.server 8080 --directory frontend/public"
+  },
+  "dependencies": {
+    "three": "^0.155.0",
+    "vite": "^4.4.0"
+  },
+  "devDependencies": {
+    "@types/three": "^0.155.0"
+  },
+  "keywords": ["computer-vision", "three.js", "gesture-recognition", "hackathon"],
+  "author": "ShellHacks 2025 Team",
+  "license": "MIT"
+}
