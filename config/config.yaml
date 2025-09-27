@@ -1,0 +1,31 @@
+dataset:
+  huggingface_repo: "adominguez07/Animal-Puppet-Dataset"
+  out_dir: "data/raw"
+  splits_dir: "data/splits"
+
+# Shadow-Vision project configuration
+project:
+  name: "Shadow-Vision"
+  description: "Real-time hand pose to shadow puppet animal classification"
+  classes:
+    - "bird"
+    - "cat"
+    - "llama"
+    - "rabbit"
+    - "deer"
+    - "dog"
+    - "snail"
+    - "swan"
+
+# TouchDesigner integration
+touchdesigner:
+  osc:
+    host: "localhost"
+    port: 8000
+
+# MediaPipe feature extraction
+features:
+  use_hand_landmarks: true
+  normalize_coordinates: true
+  extract_angles: true
+  extract_distances: true

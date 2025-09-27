@@ -15,7 +15,12 @@ sys.path.append(str(Path(__file__).parent.parent / "backend"))
 
 from cv_pipeline.camera_handler import CameraHandler
 from cv_pipeline.inference_engine import GestureInferenceEngine
-from cv_pipeline.utils import *
+from cv_pipeline.utils import (
+    resize_with_aspect_ratio, center_crop, pad_to_square, enhance_contrast,
+    extract_skin_regions, find_largest_contour, get_contour_bbox,
+    calculate_frame_difference, draw_gesture_overlay, draw_confidence_bar,
+    create_gesture_debug_view
+)
 
 class TestCameraHandler:
     """Test camera handling functionality"""

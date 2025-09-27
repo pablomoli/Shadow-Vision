@@ -5,7 +5,6 @@ Handles image preprocessing, augmentation, and dataset preparation
 """
 
 import torch
-import torch.nn as nn
 from torch.utils.data import Dataset, DataLoader
 from torchvision import transforms
 from PIL import Image
@@ -13,7 +12,6 @@ import numpy as np
 from pathlib import Path
 import json
 import cv2
-from typing import Tuple, Optional
 # Import our new local data loader
 from .data_loader import PoseDataset, create_data_loaders as create_local_data_loaders
 

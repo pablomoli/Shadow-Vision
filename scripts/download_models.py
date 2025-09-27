@@ -7,6 +7,7 @@ Downloads sample 3D models for the gesture animations
 import os
 import urllib.request
 import json
+import math
 from pathlib import Path
 
 class ModelDownloader:

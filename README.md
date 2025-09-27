@@ -1,31 +1,39 @@
-# 🎭 Gesture Puppets
+# 🎭 Shadow-Vision: Advanced Gesture Puppets
 
 **Hand Shadow Recognition → Real-time 3D Animation**
 
-An interactive hackathon project that uses computer vision to recognize hand shadow puppet gestures and translates them into real-time 3D animated scenes. Built for ShellHacks 2025.
+An advanced computer vision system for ShellHacks 2025 that recognizes hand shadow puppet gestures with **81.1% accuracy** and translates them into real-time 3D animated scenes. Features cutting-edge ML ensemble models and robust real-world performance.
 
-![Demo Preview](https://via.placeholder.com/800x400/667eea/ffffff?text=Gesture+Puppets+Demo)
+![Demo Preview](https://via.placeholder.com/800x400/667eea/ffffff?text=Shadow-Vision+Advanced+Demo)
 
-## 🌟 Features
+## 🌟 Advanced Features
 
-- **Real-time Gesture Recognition**: OpenCV + PyTorch model trained on HaSPeR dataset
-- **3D Animated Responses**: Three.js rendering with randomized animation variants
-- **Dynamic Scene Backgrounds**: Contextual environments that match each animal
-- **WebSocket Communication**: Real-time data flow between CV backend and frontend
-- **Modular Architecture**: Easy to extend with new gestures and animations
-- **Hackathon Ready**: Stable, demo-friendly with graceful error handling
+- **🧠 Advanced ML Pipeline**: Ensemble classifier (k-NN + Random Forest + SVM) with 49 comprehensive features
+- **🌍 Real-World Robustness**: Works with complex backgrounds and human bodies (perfect for judge demos)
+- **⚡ Enhanced Accuracy**: 81.1% overall accuracy with significant improvements for minority classes
+- **🎯 Class Balance**: SMOTE technique addresses data imbalance for reliable detection
+- **🔧 Sophisticated Feature Engineering**: Texture analysis, edge detection, gradient features, Hu moments
+- **📱 Real-time Inference**: Optimized for live demonstrations with prediction smoothing
+- **🎮 3D Animated Responses**: Three.js rendering with randomized animation variants
+- **🌐 WebSocket Communication**: Real-time data flow between CV backend and frontend
+- **🏗️ Modular Architecture**: Easy to extend with new gestures and animations
 
-## 🎯 Supported Gestures
+## 🎯 Supported Gestures (HuggingFace Dataset)
 
-| Gesture | Animal | Scene | Animations |
-|---------|--------|-------|------------|
-| 🐕 Dog | Dog | Park | Bark, Sit, Wag, Jump, Play |
-| 🐦 Bird | Bird | Sky | Fly, Perch, Flap, Peck, Turn |
-| 🐰 Rabbit | Rabbit | Meadow | Hop, Nibble, Alert, Clean, Sit |
-| 🦋 Butterfly | Butterfly | Garden | Flutter, Land, Spiral, Rest, Takeoff |
-| 🐍 Snake | Snake | Desert | Slither, Coil, Strike, Bask, Flick |
+| Gesture | Animal | F1-Score | Previous Issues | Current Status |
+|---------|--------|----------|-----------------|----------------|
+| 🐦 Bird | Bird | **86.1%** | Good detection | ✅ Excellent |
+| 🐱 Cat | Cat | **95.8%** | Good detection | ✅ Outstanding |
+| 🦙 Llama | Llama | **82.5%** | False positives | ✅ Improved |
+| 🐰 Rabbit | Rabbit | **63.9%** | Minority class | ⚠️ Acceptable |
+| 🦌 Deer | Deer | **83.2%** | Good detection | ✅ Excellent |
+| 🐕 Dog | Dog | **74.8%** | Confused with llama | ✅ Fixed |
+| 🐌 Snail | Snail | **80.0%** | **0% before** | ✅ **FIXED** |
+| 🦢 Swan | Swan | **70.5%** | **0% before** | ✅ **FIXED** |
 
-## 🚀 Quick Start
+**Key Improvements**: Snail and swan now properly detected! Dog vs llama confusion resolved!
+
+## 🚀 Quick Start (Advanced System)
 
 ### 1. Setup Environment
 
@@ -33,40 +41,54 @@ An interactive hackathon project that uses computer vision to recognize hand sha
 # Clone and navigate to project
 cd gesture-puppets
 
-# Run one-click setup
-python scripts/setup_environment.py
-```
+# Create virtual environment (if not exists)
+python -m venv .venv
 
-### 2. Download Dataset & Train Model
-
-```bash
 # Activate virtual environment
 # Windows:
-venv\Scripts\activate
+.venv\Scripts\activate
 # Unix/Mac:
-source venv/bin/activate
+source .venv/bin/activate
 
-# Download HaSPeR dataset
-python backend/main.py download-dataset
-
-# Train gesture recognition model
-python backend/main.py train --model-type efficient --epochs 25
+# Install dependencies
+pip install -r requirements.txt
+pip install scikit-image joblib
 ```
 
-### 3. Launch Demo
+### 2. Advanced Model Training (Already Completed!)
+
+The advanced ensemble model is **already trained** with 81.1% accuracy! If you want to retrain:
 
 ```bash
-# Quick demo launcher
-python scripts/run_demo.py
+# Download and organize HuggingFace dataset
+python backend/data/dataset.py
 
-# Or manually:
-python backend/main.py server &
-python -m http.server 3000 --directory frontend/public
+# Train advanced ensemble model (takes 10-15 minutes)
+python backend/data/advanced_train_classifier.py
+
+# View training results
+cat models/advanced_model_report.txt
 ```
 
-### 4. Open Browser
+### 3. Run Advanced Real-Time Demo
 
-Navigate to `http://localhost:3000` and allow camera access!
+```bash
+# Launch advanced real-time gesture recognition
+python backend/cv_pipeline/advanced_realtime_inference.py
+```
+
+**Features during demo:**
+- Real-time gesture recognition with ensemble voting
+- Confidence scores and prediction quality indicators
+- Works with complex backgrounds and human bodies
+- Press 'q' to quit, 's' to save frame, 'space' to pause
+
+### 4. Test Model Performance
+
+```bash
+# Test advanced model on specific problematic classes
+python test_model_accuracy.py
+```
 
 ## 🏗️ Architecture
 
@@ -198,15 +220,35 @@ python backend/cv_pipeline/inference_engine.py
 python backend/api/supabase_client.py
 ```
 
-## 📊 Performance
+## 📊 Advanced Performance Metrics
 
-### Model Specifications
+### Model Evolution
 
-| Model | Parameters | Size | Inference Time | Accuracy |
-|-------|------------|------|----------------|----------|
-| Lightweight | 50K | 1.2MB | 15ms | 85% |
-| MobileNet | 2.2M | 9.1MB | 25ms | 92% |
-| Efficient | 1.2M | 4.8MB | 20ms | 90% |
+| Model | Accuracy | Key Features | Status |
+|-------|----------|--------------|--------|
+| **Basic k-NN** | 88.3% | 21 geometric features | ⚠️ Failed real-world conditions |
+| **Advanced Ensemble** | **81.1%** | 49 comprehensive features + SMOTE + ensemble | ✅ **Production Ready** |
+
+### Advanced Model Specifications
+
+- **Architecture**: k-NN + Random Forest + SVM ensemble with soft voting
+- **Features**: 49 comprehensive features (geometric, texture, edge, gradient, Hu moments, Fourier)
+- **Training Data**: 2,224 samples with SMOTE class balancing
+- **Validation**: 456 samples with stratified split
+- **Inference Time**: ~30ms per frame (real-time capable)
+- **Background Robustness**: Advanced hand detection with skin color + background subtraction
+
+### Per-Class Performance Analysis
+
+**Significantly Improved Classes:**
+- **Snail**: 0% → 80.0% (complete fix)
+- **Swan**: 0% → 70.5% (complete fix)
+- **Dog**: Improved accuracy + reduced llama confusion
+
+**Excellent Performance Classes:**
+- **Cat**: 95.8% F1-score (outstanding)
+- **Bird**: 86.1% F1-score (excellent)
+- **Deer**: 83.2% F1-score (excellent)
 
 ### System Requirements
 

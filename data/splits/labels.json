@@ -1,0 +1,33 @@
+{
+  "classes": [
+    "bird",
+    "cat",
+    "llama",
+    "rabbit",
+    "deer",
+    "dog",
+    "snail",
+    "swan"
+  ],
+  "num_classes": 8,
+  "label_to_idx": {
+    "bird": 0,
+    "cat": 1,
+    "llama": 2,
+    "rabbit": 3,
+    "deer": 4,
+    "dog": 5,
+    "snail": 6,
+    "swan": 7
+  },
+  "idx_to_label": {
+    "0": "bird",
+    "1": "cat",
+    "2": "llama",
+    "3": "rabbit",
+    "4": "deer",
+    "5": "dog",
+    "6": "snail",
+    "7": "swan"
+  }
+}

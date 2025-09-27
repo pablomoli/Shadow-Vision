@@ -7,10 +7,7 @@ Trains CNN model on HaSPeR dataset with experiment tracking
 import torch
 import torch.nn as nn
 import torch.optim as optim
-from torch.utils.data import DataLoader
 import yaml
-import json
-import os
 from pathlib import Path
 import time
 import argparse

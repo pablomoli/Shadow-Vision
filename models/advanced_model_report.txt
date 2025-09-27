@@ -1,0 +1,42 @@
+Advanced Shadow-Vision Model Training Report
+==================================================
+
+Timestamp: 2025-09-27T17:52:01.870079
+Model Type: Ensemble (k-NN + RF + SVM)
+Training Samples: 2224
+Validation Samples: 456
+Feature Count: 30
+Class Balancing: SMOTE
+
+Performance Metrics:
+  Accuracy: 0.811
+  Precision: 0.817
+  Recall: 0.811
+  F1-Score: 0.812
+  CV Mean: 0.836 ± 0.017
+
+Per-Class F1 Scores:
+  bird: 0.861
+  cat: 0.958
+  llama: 0.825
+  rabbit: 0.639
+  deer: 0.832
+  dog: 0.748
+  snail: 0.800
+  swan: 0.705
+
+Classification Report:
+              precision    recall  f1-score   support
+
+        bird       0.91      0.82      0.86        76
+         cat       0.93      0.99      0.96        70
+       llama       0.80      0.85      0.82        55
+      rabbit       0.56      0.74      0.64        31
+        deer       0.84      0.83      0.83        63
+         dog       0.78      0.72      0.75        64
+       snail       0.79      0.81      0.80        42
+        swan       0.74      0.67      0.70        55
+
+    accuracy                           0.81       456
+   macro avg       0.79      0.80      0.80       456
+weighted avg       0.82      0.81      0.81       456
