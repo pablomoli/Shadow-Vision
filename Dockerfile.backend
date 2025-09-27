@@ -4,14 +4,14 @@ FROM python:3.10-slim
 # Set working directory
 WORKDIR /app
 
-# Install system dependencies
+# Install system dependencies for OpenCV and camera access
 RUN apt-get update && apt-get install -y \
+    # OpenCV dependencies
     libglib2.0-0 \
     libsm6 \
     libxext6 \
     libxrender-dev \
     libgomp1 \
-    libglib2.0-0 \
     libgtk-3-0 \
     libavcodec-dev \
     libavformat-dev \
@@ -24,7 +24,25 @@ RUN apt-get update && apt-get install -y \
     libtiff-dev \
     libatlas-base-dev \
     gfortran \
+    # Camera and display
+    v4l-utils \
+    libv4l-0 \
+    libxcb1 \
+    # GUI support
+    libqt5gui5 \
+    libqt5core5a \
+    libqt5widgets5 \
+    # X11 forwarding
+    libx11-6 \
+    libxext6 \
+    libxrender1 \
+    libxtst6 \
+    libxi6 \
     && rm -rf /var/lib/apt/lists/*
+
+# Set environment for GUI applications
+ENV QT_X11_NO_MITSHM=1
+ENV DISPLAY=:0
 
 # Copy requirements and install Python dependencies
 COPY requirements.txt .
@@ -47,5 +65,5 @@ EXPOSE 8000
 HEALTHCHECK --interval=30s --timeout=30s --start-period=5s --retries=3 \
   CMD python -c "import cv2; print('Backend healthy')" || exit 1
 
-# Default command
-CMD ["python", "backend/cv_pipeline/advanced_realtime_inference.py"]
+# Default command (Docker-optimized)
+CMD ["python", "docker_demo.py"]

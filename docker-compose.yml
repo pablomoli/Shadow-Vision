@@ -1,7 +1,7 @@
 version: '3.8'
 
 services:
-  backend:
+  shadow-vision:
     build:
       context: .
       dockerfile: Dockerfile.backend
@@ -11,24 +11,34 @@ services:
       - ./backend:/app/backend
       - ./config:/app/config
       - ./models:/app/models
+      - ./data:/app/data
+      - /tmp/.X11-unix:/tmp/.X11-unix:rw  # For X11 forwarding (Linux)
     environment:
       - PYTHONPATH=/app
-    depends_on:
-      - redis
+      - DISPLAY=${DISPLAY}  # For GUI applications
+    devices:
+      - /dev/video0:/dev/video0  # Camera access (Linux)
+    privileged: true  # Required for camera access
+    stdin_open: true
+    tty: true
+    command: python docker_demo.py
 
-  frontend:
+  # Optional: Web API service for future web integration
+  api-server:
     build:
       context: .
-      dockerfile: Dockerfile.frontend
+      dockerfile: Dockerfile.backend
     ports:
-      - "3000:3000"
+      - "8001:8001"
     volumes:
-      - ./frontend:/app/frontend
-
-  redis:
-    image: redis:7-alpine
-    ports:
-      - "6379:6379"
+      - ./backend:/app/backend
+      - ./config:/app/config
+      - ./models:/app/models
+    environment:
+      - PYTHONPATH=/app
+    command: python -c "print('API server placeholder - for future web integration')"
+    profiles:
+      - web  # Only run when web profile is specified
 
 volumes:
   models_data:
