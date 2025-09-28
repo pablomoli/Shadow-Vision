@@ -1,0 +1,5249 @@
+{
+  "processing_stats": {
+    "total_images": 3329,
+    "successful_extractions": 742,
+    "failed_extractions": 2587,
+    "per_class_stats": {
+      "bird": {
+        "total": 480,
+        "success": 83
+      },
+      "cat": {
+        "total": 372,
+        "success": 109
+      },
+      "llama": {
+        "total": 391,
+        "success": 9
+      },
+      "rabbit": {
+        "total": 444,
+        "success": 80
+      },
+      "deer": {
+        "total": 417,
+        "success": 216
+      },
+      "dog": {
+        "total": 477,
+        "success": 176
+      },
+      "snail": {
+        "total": 309,
+        "success": 44
+      },
+      "swan": {
+        "total": 439,
+        "success": 25
+      }
+    }
+  },
+  "feature_count": 89,
+  "sample_count": 742,
+  "classes": [
+    "bird",
+    "cat",
+    "llama",
+    "rabbit",
+    "deer",
+    "dog",
+    "snail",
+    "swan"
+  ],
+  "metadata": [
+    {
+      "image_path": "data\\raw\\train\\bird\\bird_train_00010.jpg",
+      "class_name": "bird",
+      "class_index": 0,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\bird\\bird_train_00089.jpg",
+      "class_name": "bird",
+      "class_index": 0,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\bird\\bird_train_00125.jpg",
+      "class_name": "bird",
+      "class_index": 0,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\bird\\bird_train_00146.jpg",
+      "class_name": "bird",
+      "class_index": 0,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\bird\\bird_train_00182.jpg",
+      "class_name": "bird",
+      "class_index": 0,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\bird\\bird_train_00229.jpg",
+      "class_name": "bird",
+      "class_index": 0,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\bird\\bird_train_00230.jpg",
+      "class_name": "bird",
+      "class_index": 0,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\bird\\bird_train_00268.jpg",
+      "class_name": "bird",
+      "class_index": 0,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\bird\\bird_train_00275.jpg",
+      "class_name": "bird",
+      "class_index": 0,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\bird\\bird_train_00315.jpg",
+      "class_name": "bird",
+      "class_index": 0,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\bird\\bird_train_00354.jpg",
+      "class_name": "bird",
+      "class_index": 0,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\bird\\bird_train_00356.jpg",
+      "class_name": "bird",
+      "class_index": 0,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\bird\\bird_train_00397.jpg",
+      "class_name": "bird",
+      "class_index": 0,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\bird\\bird_train_00456.jpg",
+      "class_name": "bird",
+      "class_index": 0,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\bird\\bird_train_00486.jpg",
+      "class_name": "bird",
+      "class_index": 0,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\bird\\bird_train_00531.jpg",
+      "class_name": "bird",
+      "class_index": 0,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\bird\\bird_train_00634.jpg",
+      "class_name": "bird",
+      "class_index": 0,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\bird\\bird_train_00661.jpg",
+      "class_name": "bird",
+      "class_index": 0,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\bird\\bird_train_00717.jpg",
+      "class_name": "bird",
+      "class_index": 0,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\bird\\bird_train_00761.jpg",
+      "class_name": "bird",
+      "class_index": 0,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\bird\\bird_train_00779.jpg",
+      "class_name": "bird",
+      "class_index": 0,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\bird\\bird_train_00858.jpg",
+      "class_name": "bird",
+      "class_index": 0,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\bird\\bird_train_00900.jpg",
+      "class_name": "bird",
+      "class_index": 0,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\bird\\bird_train_00961.jpg",
+      "class_name": "bird",
+      "class_index": 0,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\bird\\bird_train_00984.jpg",
+      "class_name": "bird",
+      "class_index": 0,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\bird\\bird_train_01040.jpg",
+      "class_name": "bird",
+      "class_index": 0,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\bird\\bird_train_01044.jpg",
+      "class_name": "bird",
+      "class_index": 0,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\bird\\bird_train_01092.jpg",
+      "class_name": "bird",
+      "class_index": 0,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\bird\\bird_train_01096.jpg",
+      "class_name": "bird",
+      "class_index": 0,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\bird\\bird_train_01133.jpg",
+      "class_name": "bird",
+      "class_index": 0,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\bird\\bird_train_01208.jpg",
+      "class_name": "bird",
+      "class_index": 0,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\bird\\bird_train_01224.jpg",
+      "class_name": "bird",
+      "class_index": 0,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\bird\\bird_train_01401.jpg",
+      "class_name": "bird",
+      "class_index": 0,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\bird\\bird_train_01468.jpg",
+      "class_name": "bird",
+      "class_index": 0,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\bird\\bird_train_01534.jpg",
+      "class_name": "bird",
+      "class_index": 0,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\bird\\bird_train_01552.jpg",
+      "class_name": "bird",
+      "class_index": 0,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\bird\\bird_train_01590.jpg",
+      "class_name": "bird",
+      "class_index": 0,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\bird\\bird_train_01620.jpg",
+      "class_name": "bird",
+      "class_index": 0,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\bird\\bird_train_01714.jpg",
+      "class_name": "bird",
+      "class_index": 0,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\bird\\bird_train_01748.jpg",
+      "class_name": "bird",
+      "class_index": 0,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\bird\\bird_train_01766.jpg",
+      "class_name": "bird",
+      "class_index": 0,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\bird\\bird_train_01783.jpg",
+      "class_name": "bird",
+      "class_index": 0,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\bird\\bird_train_01807.jpg",
+      "class_name": "bird",
+      "class_index": 0,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\bird\\bird_train_01812.jpg",
+      "class_name": "bird",
+      "class_index": 0,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\bird\\bird_train_01824.jpg",
+      "class_name": "bird",
+      "class_index": 0,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\bird\\bird_train_01839.jpg",
+      "class_name": "bird",
+      "class_index": 0,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\bird\\bird_train_01950.jpg",
+      "class_name": "bird",
+      "class_index": 0,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\bird\\bird_train_02010.jpg",
+      "class_name": "bird",
+      "class_index": 0,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\bird\\bird_train_02014.jpg",
+      "class_name": "bird",
+      "class_index": 0,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\bird\\bird_train_02052.jpg",
+      "class_name": "bird",
+      "class_index": 0,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\bird\\bird_train_02068.jpg",
+      "class_name": "bird",
+      "class_index": 0,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\bird\\bird_train_02129.jpg",
+      "class_name": "bird",
+      "class_index": 0,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\bird\\bird_train_02145.jpg",
+      "class_name": "bird",
+      "class_index": 0,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\bird\\bird_train_02230.jpg",
+      "class_name": "bird",
+      "class_index": 0,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\bird\\bird_train_02240.jpg",
+      "class_name": "bird",
+      "class_index": 0,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\bird\\bird_train_02251.jpg",
+      "class_name": "bird",
+      "class_index": 0,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\bird\\bird_train_02409.jpg",
+      "class_name": "bird",
+      "class_index": 0,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\bird\\bird_train_02441.jpg",
+      "class_name": "bird",
+      "class_index": 0,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\bird\\bird_train_02447.jpg",
+      "class_name": "bird",
+      "class_index": 0,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\bird\\bird_train_02453.jpg",
+      "class_name": "bird",
+      "class_index": 0,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\bird\\bird_train_02466.jpg",
+      "class_name": "bird",
+      "class_index": 0,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\bird\\bird_train_02504.jpg",
+      "class_name": "bird",
+      "class_index": 0,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\bird\\bird_train_02529.jpg",
+      "class_name": "bird",
+      "class_index": 0,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\bird\\bird_train_02596.jpg",
+      "class_name": "bird",
+      "class_index": 0,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\bird\\bird_train_02626.jpg",
+      "class_name": "bird",
+      "class_index": 0,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\bird\\bird_train_02635.jpg",
+      "class_name": "bird",
+      "class_index": 0,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\bird\\bird_train_02645.jpg",
+      "class_name": "bird",
+      "class_index": 0,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\cat\\cat_train_00052.jpg",
+      "class_name": "cat",
+      "class_index": 1,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\cat\\cat_train_00061.jpg",
+      "class_name": "cat",
+      "class_index": 1,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\cat\\cat_train_00158.jpg",
+      "class_name": "cat",
+      "class_index": 1,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\cat\\cat_train_00177.jpg",
+      "class_name": "cat",
+      "class_index": 1,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\cat\\cat_train_00191.jpg",
+      "class_name": "cat",
+      "class_index": 1,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\cat\\cat_train_00200.jpg",
+      "class_name": "cat",
+      "class_index": 1,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\cat\\cat_train_00201.jpg",
+      "class_name": "cat",
+      "class_index": 1,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\cat\\cat_train_00221.jpg",
+      "class_name": "cat",
+      "class_index": 1,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\cat\\cat_train_00242.jpg",
+      "class_name": "cat",
+      "class_index": 1,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\cat\\cat_train_00250.jpg",
+      "class_name": "cat",
+      "class_index": 1,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\cat\\cat_train_00291.jpg",
+      "class_name": "cat",
+      "class_index": 1,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\cat\\cat_train_00294.jpg",
+      "class_name": "cat",
+      "class_index": 1,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\cat\\cat_train_00301.jpg",
+      "class_name": "cat",
+      "class_index": 1,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\cat\\cat_train_00338.jpg",
+      "class_name": "cat",
+      "class_index": 1,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\cat\\cat_train_00359.jpg",
+      "class_name": "cat",
+      "class_index": 1,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\cat\\cat_train_00378.jpg",
+      "class_name": "cat",
+      "class_index": 1,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\cat\\cat_train_00383.jpg",
+      "class_name": "cat",
+      "class_index": 1,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\cat\\cat_train_00406.jpg",
+      "class_name": "cat",
+      "class_index": 1,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\cat\\cat_train_00420.jpg",
+      "class_name": "cat",
+      "class_index": 1,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\cat\\cat_train_00474.jpg",
+      "class_name": "cat",
+      "class_index": 1,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\cat\\cat_train_00507.jpg",
+      "class_name": "cat",
+      "class_index": 1,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\cat\\cat_train_00522.jpg",
+      "class_name": "cat",
+      "class_index": 1,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\cat\\cat_train_00523.jpg",
+      "class_name": "cat",
+      "class_index": 1,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\cat\\cat_train_00556.jpg",
+      "class_name": "cat",
+      "class_index": 1,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\cat\\cat_train_00599.jpg",
+      "class_name": "cat",
+      "class_index": 1,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\cat\\cat_train_00639.jpg",
+      "class_name": "cat",
+      "class_index": 1,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\cat\\cat_train_00642.jpg",
+      "class_name": "cat",
+      "class_index": 1,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\cat\\cat_train_00693.jpg",
+      "class_name": "cat",
+      "class_index": 1,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\cat\\cat_train_00697.jpg",
+      "class_name": "cat",
+      "class_index": 1,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\cat\\cat_train_00699.jpg",
+      "class_name": "cat",
+      "class_index": 1,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\cat\\cat_train_00724.jpg",
+      "class_name": "cat",
+      "class_index": 1,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\cat\\cat_train_00737.jpg",
+      "class_name": "cat",
+      "class_index": 1,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\cat\\cat_train_00764.jpg",
+      "class_name": "cat",
+      "class_index": 1,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\cat\\cat_train_00816.jpg",
+      "class_name": "cat",
+      "class_index": 1,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\cat\\cat_train_00932.jpg",
+      "class_name": "cat",
+      "class_index": 1,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\cat\\cat_train_01004.jpg",
+      "class_name": "cat",
+      "class_index": 1,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\cat\\cat_train_01099.jpg",
+      "class_name": "cat",
+      "class_index": 1,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\cat\\cat_train_01116.jpg",
+      "class_name": "cat",
+      "class_index": 1,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\cat\\cat_train_01155.jpg",
+      "class_name": "cat",
+      "class_index": 1,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\cat\\cat_train_01184.jpg",
+      "class_name": "cat",
+      "class_index": 1,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\cat\\cat_train_01235.jpg",
+      "class_name": "cat",
+      "class_index": 1,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\cat\\cat_train_01280.jpg",
+      "class_name": "cat",
+      "class_index": 1,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\cat\\cat_train_01287.jpg",
+      "class_name": "cat",
+      "class_index": 1,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\cat\\cat_train_01306.jpg",
+      "class_name": "cat",
+      "class_index": 1,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\cat\\cat_train_01317.jpg",
+      "class_name": "cat",
+      "class_index": 1,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\cat\\cat_train_01352.jpg",
+      "class_name": "cat",
+      "class_index": 1,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\cat\\cat_train_01417.jpg",
+      "class_name": "cat",
+      "class_index": 1,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\cat\\cat_train_01458.jpg",
+      "class_name": "cat",
+      "class_index": 1,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\cat\\cat_train_01513.jpg",
+      "class_name": "cat",
+      "class_index": 1,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\cat\\cat_train_01523.jpg",
+      "class_name": "cat",
+      "class_index": 1,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\cat\\cat_train_01537.jpg",
+      "class_name": "cat",
+      "class_index": 1,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\cat\\cat_train_01558.jpg",
+      "class_name": "cat",
+      "class_index": 1,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\cat\\cat_train_01579.jpg",
+      "class_name": "cat",
+      "class_index": 1,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\cat\\cat_train_01627.jpg",
+      "class_name": "cat",
+      "class_index": 1,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\cat\\cat_train_01647.jpg",
+      "class_name": "cat",
+      "class_index": 1,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\cat\\cat_train_01652.jpg",
+      "class_name": "cat",
+      "class_index": 1,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\cat\\cat_train_01731.jpg",
+      "class_name": "cat",
+      "class_index": 1,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\cat\\cat_train_01757.jpg",
+      "class_name": "cat",
+      "class_index": 1,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\cat\\cat_train_01797.jpg",
+      "class_name": "cat",
+      "class_index": 1,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\cat\\cat_train_01806.jpg",
+      "class_name": "cat",
+      "class_index": 1,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\cat\\cat_train_01852.jpg",
+      "class_name": "cat",
+      "class_index": 1,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\cat\\cat_train_01898.jpg",
+      "class_name": "cat",
+      "class_index": 1,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\cat\\cat_train_01900.jpg",
+      "class_name": "cat",
+      "class_index": 1,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\cat\\cat_train_01921.jpg",
+      "class_name": "cat",
+      "class_index": 1,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\cat\\cat_train_01961.jpg",
+      "class_name": "cat",
+      "class_index": 1,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\cat\\cat_train_02000.jpg",
+      "class_name": "cat",
+      "class_index": 1,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\cat\\cat_train_02087.jpg",
+      "class_name": "cat",
+      "class_index": 1,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\cat\\cat_train_02092.jpg",
+      "class_name": "cat",
+      "class_index": 1,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\cat\\cat_train_02122.jpg",
+      "class_name": "cat",
+      "class_index": 1,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\cat\\cat_train_02124.jpg",
+      "class_name": "cat",
+      "class_index": 1,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\cat\\cat_train_02146.jpg",
+      "class_name": "cat",
+      "class_index": 1,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\cat\\cat_train_02169.jpg",
+      "class_name": "cat",
+      "class_index": 1,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\cat\\cat_train_02175.jpg",
+      "class_name": "cat",
+      "class_index": 1,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\cat\\cat_train_02210.jpg",
+      "class_name": "cat",
+      "class_index": 1,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\cat\\cat_train_02235.jpg",
+      "class_name": "cat",
+      "class_index": 1,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\cat\\cat_train_02241.jpg",
+      "class_name": "cat",
+      "class_index": 1,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\cat\\cat_train_02255.jpg",
+      "class_name": "cat",
+      "class_index": 1,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\cat\\cat_train_02260.jpg",
+      "class_name": "cat",
+      "class_index": 1,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\cat\\cat_train_02292.jpg",
+      "class_name": "cat",
+      "class_index": 1,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\cat\\cat_train_02316.jpg",
+      "class_name": "cat",
+      "class_index": 1,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\cat\\cat_train_02393.jpg",
+      "class_name": "cat",
+      "class_index": 1,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\cat\\cat_train_02479.jpg",
+      "class_name": "cat",
+      "class_index": 1,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\cat\\cat_train_02488.jpg",
+      "class_name": "cat",
+      "class_index": 1,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\cat\\cat_train_02493.jpg",
+      "class_name": "cat",
+      "class_index": 1,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\cat\\cat_train_02567.jpg",
+      "class_name": "cat",
+      "class_index": 1,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\cat\\cat_train_02579.jpg",
+      "class_name": "cat",
+      "class_index": 1,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\cat\\cat_train_02581.jpg",
+      "class_name": "cat",
+      "class_index": 1,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\cat\\cat_train_02592.jpg",
+      "class_name": "cat",
+      "class_index": 1,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\llama\\llama_train_00343.jpg",
+      "class_name": "llama",
+      "class_index": 2,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\llama\\llama_train_01008.jpg",
+      "class_name": "llama",
+      "class_index": 2,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\llama\\llama_train_01457.jpg",
+      "class_name": "llama",
+      "class_index": 2,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\llama\\llama_train_01551.jpg",
+      "class_name": "llama",
+      "class_index": 2,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\llama\\llama_train_01925.jpg",
+      "class_name": "llama",
+      "class_index": 2,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\llama\\llama_train_01993.jpg",
+      "class_name": "llama",
+      "class_index": 2,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\rabbit\\rabbit_train_00005.jpg",
+      "class_name": "rabbit",
+      "class_index": 3,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\rabbit\\rabbit_train_00107.jpg",
+      "class_name": "rabbit",
+      "class_index": 3,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\rabbit\\rabbit_train_00127.jpg",
+      "class_name": "rabbit",
+      "class_index": 3,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\rabbit\\rabbit_train_00183.jpg",
+      "class_name": "rabbit",
+      "class_index": 3,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\rabbit\\rabbit_train_00189.jpg",
+      "class_name": "rabbit",
+      "class_index": 3,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\rabbit\\rabbit_train_00215.jpg",
+      "class_name": "rabbit",
+      "class_index": 3,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\rabbit\\rabbit_train_00218.jpg",
+      "class_name": "rabbit",
+      "class_index": 3,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\rabbit\\rabbit_train_00222.jpg",
+      "class_name": "rabbit",
+      "class_index": 3,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\rabbit\\rabbit_train_00306.jpg",
+      "class_name": "rabbit",
+      "class_index": 3,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\rabbit\\rabbit_train_00322.jpg",
+      "class_name": "rabbit",
+      "class_index": 3,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\rabbit\\rabbit_train_00323.jpg",
+      "class_name": "rabbit",
+      "class_index": 3,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\rabbit\\rabbit_train_00348.jpg",
+      "class_name": "rabbit",
+      "class_index": 3,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\rabbit\\rabbit_train_00370.jpg",
+      "class_name": "rabbit",
+      "class_index": 3,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\rabbit\\rabbit_train_00371.jpg",
+      "class_name": "rabbit",
+      "class_index": 3,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\rabbit\\rabbit_train_00386.jpg",
+      "class_name": "rabbit",
+      "class_index": 3,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\rabbit\\rabbit_train_00429.jpg",
+      "class_name": "rabbit",
+      "class_index": 3,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\rabbit\\rabbit_train_00445.jpg",
+      "class_name": "rabbit",
+      "class_index": 3,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\rabbit\\rabbit_train_00478.jpg",
+      "class_name": "rabbit",
+      "class_index": 3,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\rabbit\\rabbit_train_00492.jpg",
+      "class_name": "rabbit",
+      "class_index": 3,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\rabbit\\rabbit_train_00588.jpg",
+      "class_name": "rabbit",
+      "class_index": 3,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\rabbit\\rabbit_train_00621.jpg",
+      "class_name": "rabbit",
+      "class_index": 3,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\rabbit\\rabbit_train_00644.jpg",
+      "class_name": "rabbit",
+      "class_index": 3,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\rabbit\\rabbit_train_00671.jpg",
+      "class_name": "rabbit",
+      "class_index": 3,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\rabbit\\rabbit_train_00702.jpg",
+      "class_name": "rabbit",
+      "class_index": 3,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\rabbit\\rabbit_train_00722.jpg",
+      "class_name": "rabbit",
+      "class_index": 3,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\rabbit\\rabbit_train_00735.jpg",
+      "class_name": "rabbit",
+      "class_index": 3,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\rabbit\\rabbit_train_00740.jpg",
+      "class_name": "rabbit",
+      "class_index": 3,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\rabbit\\rabbit_train_00782.jpg",
+      "class_name": "rabbit",
+      "class_index": 3,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\rabbit\\rabbit_train_00783.jpg",
+      "class_name": "rabbit",
+      "class_index": 3,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\rabbit\\rabbit_train_00786.jpg",
+      "class_name": "rabbit",
+      "class_index": 3,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\rabbit\\rabbit_train_00859.jpg",
+      "class_name": "rabbit",
+      "class_index": 3,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\rabbit\\rabbit_train_00924.jpg",
+      "class_name": "rabbit",
+      "class_index": 3,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\rabbit\\rabbit_train_01121.jpg",
+      "class_name": "rabbit",
+      "class_index": 3,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\rabbit\\rabbit_train_01211.jpg",
+      "class_name": "rabbit",
+      "class_index": 3,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\rabbit\\rabbit_train_01267.jpg",
+      "class_name": "rabbit",
+      "class_index": 3,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\rabbit\\rabbit_train_01330.jpg",
+      "class_name": "rabbit",
+      "class_index": 3,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\rabbit\\rabbit_train_01373.jpg",
+      "class_name": "rabbit",
+      "class_index": 3,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\rabbit\\rabbit_train_01411.jpg",
+      "class_name": "rabbit",
+      "class_index": 3,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\rabbit\\rabbit_train_01456.jpg",
+      "class_name": "rabbit",
+      "class_index": 3,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\rabbit\\rabbit_train_01543.jpg",
+      "class_name": "rabbit",
+      "class_index": 3,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\rabbit\\rabbit_train_01562.jpg",
+      "class_name": "rabbit",
+      "class_index": 3,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\rabbit\\rabbit_train_01626.jpg",
+      "class_name": "rabbit",
+      "class_index": 3,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\rabbit\\rabbit_train_01709.jpg",
+      "class_name": "rabbit",
+      "class_index": 3,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\rabbit\\rabbit_train_01715.jpg",
+      "class_name": "rabbit",
+      "class_index": 3,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\rabbit\\rabbit_train_01723.jpg",
+      "class_name": "rabbit",
+      "class_index": 3,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\rabbit\\rabbit_train_01733.jpg",
+      "class_name": "rabbit",
+      "class_index": 3,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\rabbit\\rabbit_train_01844.jpg",
+      "class_name": "rabbit",
+      "class_index": 3,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\rabbit\\rabbit_train_01867.jpg",
+      "class_name": "rabbit",
+      "class_index": 3,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\rabbit\\rabbit_train_01870.jpg",
+      "class_name": "rabbit",
+      "class_index": 3,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\rabbit\\rabbit_train_01888.jpg",
+      "class_name": "rabbit",
+      "class_index": 3,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\rabbit\\rabbit_train_01899.jpg",
+      "class_name": "rabbit",
+      "class_index": 3,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\rabbit\\rabbit_train_01942.jpg",
+      "class_name": "rabbit",
+      "class_index": 3,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\rabbit\\rabbit_train_01948.jpg",
+      "class_name": "rabbit",
+      "class_index": 3,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\rabbit\\rabbit_train_01970.jpg",
+      "class_name": "rabbit",
+      "class_index": 3,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\rabbit\\rabbit_train_01973.jpg",
+      "class_name": "rabbit",
+      "class_index": 3,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\rabbit\\rabbit_train_02091.jpg",
+      "class_name": "rabbit",
+      "class_index": 3,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\rabbit\\rabbit_train_02205.jpg",
+      "class_name": "rabbit",
+      "class_index": 3,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\rabbit\\rabbit_train_02337.jpg",
+      "class_name": "rabbit",
+      "class_index": 3,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\rabbit\\rabbit_train_02384.jpg",
+      "class_name": "rabbit",
+      "class_index": 3,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\rabbit\\rabbit_train_02410.jpg",
+      "class_name": "rabbit",
+      "class_index": 3,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\rabbit\\rabbit_train_02435.jpg",
+      "class_name": "rabbit",
+      "class_index": 3,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\rabbit\\rabbit_train_02458.jpg",
+      "class_name": "rabbit",
+      "class_index": 3,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\rabbit\\rabbit_train_02496.jpg",
+      "class_name": "rabbit",
+      "class_index": 3,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\rabbit\\rabbit_train_02522.jpg",
+      "class_name": "rabbit",
+      "class_index": 3,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\rabbit\\rabbit_train_02533.jpg",
+      "class_name": "rabbit",
+      "class_index": 3,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\deer\\deer_train_00000.jpg",
+      "class_name": "deer",
+      "class_index": 4,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\deer\\deer_train_00007.jpg",
+      "class_name": "deer",
+      "class_index": 4,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\deer\\deer_train_00008.jpg",
+      "class_name": "deer",
+      "class_index": 4,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\deer\\deer_train_00013.jpg",
+      "class_name": "deer",
+      "class_index": 4,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\deer\\deer_train_00025.jpg",
+      "class_name": "deer",
+      "class_index": 4,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\deer\\deer_train_00028.jpg",
+      "class_name": "deer",
+      "class_index": 4,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\deer\\deer_train_00042.jpg",
+      "class_name": "deer",
+      "class_index": 4,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\deer\\deer_train_00045.jpg",
+      "class_name": "deer",
+      "class_index": 4,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\deer\\deer_train_00057.jpg",
+      "class_name": "deer",
+      "class_index": 4,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\deer\\deer_train_00079.jpg",
+      "class_name": "deer",
+      "class_index": 4,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\deer\\deer_train_00103.jpg",
+      "class_name": "deer",
+      "class_index": 4,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\deer\\deer_train_00115.jpg",
+      "class_name": "deer",
+      "class_index": 4,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\deer\\deer_train_00151.jpg",
+      "class_name": "deer",
+      "class_index": 4,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\deer\\deer_train_00190.jpg",
+      "class_name": "deer",
+      "class_index": 4,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\deer\\deer_train_00204.jpg",
+      "class_name": "deer",
+      "class_index": 4,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\deer\\deer_train_00208.jpg",
+      "class_name": "deer",
+      "class_index": 4,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\deer\\deer_train_00225.jpg",
+      "class_name": "deer",
+      "class_index": 4,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\deer\\deer_train_00236.jpg",
+      "class_name": "deer",
+      "class_index": 4,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\deer\\deer_train_00255.jpg",
+      "class_name": "deer",
+      "class_index": 4,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\deer\\deer_train_00272.jpg",
+      "class_name": "deer",
+      "class_index": 4,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\deer\\deer_train_00282.jpg",
+      "class_name": "deer",
+      "class_index": 4,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\deer\\deer_train_00330.jpg",
+      "class_name": "deer",
+      "class_index": 4,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\deer\\deer_train_00349.jpg",
+      "class_name": "deer",
+      "class_index": 4,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\deer\\deer_train_00351.jpg",
+      "class_name": "deer",
+      "class_index": 4,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\deer\\deer_train_00352.jpg",
+      "class_name": "deer",
+      "class_index": 4,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\deer\\deer_train_00361.jpg",
+      "class_name": "deer",
+      "class_index": 4,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\deer\\deer_train_00363.jpg",
+      "class_name": "deer",
+      "class_index": 4,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\deer\\deer_train_00377.jpg",
+      "class_name": "deer",
+      "class_index": 4,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\deer\\deer_train_00385.jpg",
+      "class_name": "deer",
+      "class_index": 4,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\deer\\deer_train_00396.jpg",
+      "class_name": "deer",
+      "class_index": 4,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\deer\\deer_train_00415.jpg",
+      "class_name": "deer",
+      "class_index": 4,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\deer\\deer_train_00419.jpg",
+      "class_name": "deer",
+      "class_index": 4,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\deer\\deer_train_00446.jpg",
+      "class_name": "deer",
+      "class_index": 4,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\deer\\deer_train_00472.jpg",
+      "class_name": "deer",
+      "class_index": 4,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\deer\\deer_train_00481.jpg",
+      "class_name": "deer",
+      "class_index": 4,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\deer\\deer_train_00494.jpg",
+      "class_name": "deer",
+      "class_index": 4,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\deer\\deer_train_00532.jpg",
+      "class_name": "deer",
+      "class_index": 4,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\deer\\deer_train_00554.jpg",
+      "class_name": "deer",
+      "class_index": 4,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\deer\\deer_train_00607.jpg",
+      "class_name": "deer",
+      "class_index": 4,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\deer\\deer_train_00608.jpg",
+      "class_name": "deer",
+      "class_index": 4,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\deer\\deer_train_00611.jpg",
+      "class_name": "deer",
+      "class_index": 4,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\deer\\deer_train_00616.jpg",
+      "class_name": "deer",
+      "class_index": 4,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\deer\\deer_train_00641.jpg",
+      "class_name": "deer",
+      "class_index": 4,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\deer\\deer_train_00691.jpg",
+      "class_name": "deer",
+      "class_index": 4,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\deer\\deer_train_00698.jpg",
+      "class_name": "deer",
+      "class_index": 4,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\deer\\deer_train_00707.jpg",
+      "class_name": "deer",
+      "class_index": 4,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\deer\\deer_train_00708.jpg",
+      "class_name": "deer",
+      "class_index": 4,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\deer\\deer_train_00715.jpg",
+      "class_name": "deer",
+      "class_index": 4,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\deer\\deer_train_00729.jpg",
+      "class_name": "deer",
+      "class_index": 4,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\deer\\deer_train_00741.jpg",
+      "class_name": "deer",
+      "class_index": 4,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\deer\\deer_train_00768.jpg",
+      "class_name": "deer",
+      "class_index": 4,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\deer\\deer_train_00808.jpg",
+      "class_name": "deer",
+      "class_index": 4,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\deer\\deer_train_00830.jpg",
+      "class_name": "deer",
+      "class_index": 4,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\deer\\deer_train_00851.jpg",
+      "class_name": "deer",
+      "class_index": 4,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\deer\\deer_train_00860.jpg",
+      "class_name": "deer",
+      "class_index": 4,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\deer\\deer_train_00870.jpg",
+      "class_name": "deer",
+      "class_index": 4,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\deer\\deer_train_00872.jpg",
+      "class_name": "deer",
+      "class_index": 4,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\deer\\deer_train_00877.jpg",
+      "class_name": "deer",
+      "class_index": 4,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\deer\\deer_train_00889.jpg",
+      "class_name": "deer",
+      "class_index": 4,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\deer\\deer_train_00891.jpg",
+      "class_name": "deer",
+      "class_index": 4,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\deer\\deer_train_00912.jpg",
+      "class_name": "deer",
+      "class_index": 4,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\deer\\deer_train_00919.jpg",
+      "class_name": "deer",
+      "class_index": 4,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\deer\\deer_train_00936.jpg",
+      "class_name": "deer",
+      "class_index": 4,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\deer\\deer_train_00942.jpg",
+      "class_name": "deer",
+      "class_index": 4,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\deer\\deer_train_00979.jpg",
+      "class_name": "deer",
+      "class_index": 4,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\deer\\deer_train_01021.jpg",
+      "class_name": "deer",
+      "class_index": 4,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\deer\\deer_train_01037.jpg",
+      "class_name": "deer",
+      "class_index": 4,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\deer\\deer_train_01066.jpg",
+      "class_name": "deer",
+      "class_index": 4,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\deer\\deer_train_01100.jpg",
+      "class_name": "deer",
+      "class_index": 4,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\deer\\deer_train_01127.jpg",
+      "class_name": "deer",
+      "class_index": 4,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\deer\\deer_train_01137.jpg",
+      "class_name": "deer",
+      "class_index": 4,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\deer\\deer_train_01146.jpg",
+      "class_name": "deer",
+      "class_index": 4,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\deer\\deer_train_01153.jpg",
+      "class_name": "deer",
+      "class_index": 4,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\deer\\deer_train_01157.jpg",
+      "class_name": "deer",
+      "class_index": 4,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\deer\\deer_train_01160.jpg",
+      "class_name": "deer",
+      "class_index": 4,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\deer\\deer_train_01165.jpg",
+      "class_name": "deer",
+      "class_index": 4,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\deer\\deer_train_01177.jpg",
+      "class_name": "deer",
+      "class_index": 4,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\deer\\deer_train_01185.jpg",
+      "class_name": "deer",
+      "class_index": 4,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\deer\\deer_train_01190.jpg",
+      "class_name": "deer",
+      "class_index": 4,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\deer\\deer_train_01198.jpg",
+      "class_name": "deer",
+      "class_index": 4,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\deer\\deer_train_01221.jpg",
+      "class_name": "deer",
+      "class_index": 4,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\deer\\deer_train_01230.jpg",
+      "class_name": "deer",
+      "class_index": 4,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\deer\\deer_train_01268.jpg",
+      "class_name": "deer",
+      "class_index": 4,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\deer\\deer_train_01301.jpg",
+      "class_name": "deer",
+      "class_index": 4,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\deer\\deer_train_01308.jpg",
+      "class_name": "deer",
+      "class_index": 4,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\deer\\deer_train_01309.jpg",
+      "class_name": "deer",
+      "class_index": 4,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\deer\\deer_train_01321.jpg",
+      "class_name": "deer",
+      "class_index": 4,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\deer\\deer_train_01336.jpg",
+      "class_name": "deer",
+      "class_index": 4,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\deer\\deer_train_01355.jpg",
+      "class_name": "deer",
+      "class_index": 4,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\deer\\deer_train_01356.jpg",
+      "class_name": "deer",
+      "class_index": 4,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\deer\\deer_train_01399.jpg",
+      "class_name": "deer",
+      "class_index": 4,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\deer\\deer_train_01426.jpg",
+      "class_name": "deer",
+      "class_index": 4,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\deer\\deer_train_01438.jpg",
+      "class_name": "deer",
+      "class_index": 4,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\deer\\deer_train_01441.jpg",
+      "class_name": "deer",
+      "class_index": 4,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\deer\\deer_train_01473.jpg",
+      "class_name": "deer",
+      "class_index": 4,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\deer\\deer_train_01483.jpg",
+      "class_name": "deer",
+      "class_index": 4,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\deer\\deer_train_01484.jpg",
+      "class_name": "deer",
+      "class_index": 4,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\deer\\deer_train_01506.jpg",
+      "class_name": "deer",
+      "class_index": 4,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\deer\\deer_train_01521.jpg",
+      "class_name": "deer",
+      "class_index": 4,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\deer\\deer_train_01535.jpg",
+      "class_name": "deer",
+      "class_index": 4,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\deer\\deer_train_01553.jpg",
+      "class_name": "deer",
+      "class_index": 4,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\deer\\deer_train_01563.jpg",
+      "class_name": "deer",
+      "class_index": 4,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\deer\\deer_train_01569.jpg",
+      "class_name": "deer",
+      "class_index": 4,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\deer\\deer_train_01572.jpg",
+      "class_name": "deer",
+      "class_index": 4,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\deer\\deer_train_01573.jpg",
+      "class_name": "deer",
+      "class_index": 4,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\deer\\deer_train_01578.jpg",
+      "class_name": "deer",
+      "class_index": 4,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\deer\\deer_train_01601.jpg",
+      "class_name": "deer",
+      "class_index": 4,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\deer\\deer_train_01611.jpg",
+      "class_name": "deer",
+      "class_index": 4,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\deer\\deer_train_01613.jpg",
+      "class_name": "deer",
+      "class_index": 4,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\deer\\deer_train_01653.jpg",
+      "class_name": "deer",
+      "class_index": 4,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\deer\\deer_train_01684.jpg",
+      "class_name": "deer",
+      "class_index": 4,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\deer\\deer_train_01699.jpg",
+      "class_name": "deer",
+      "class_index": 4,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\deer\\deer_train_01701.jpg",
+      "class_name": "deer",
+      "class_index": 4,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\deer\\deer_train_01717.jpg",
+      "class_name": "deer",
+      "class_index": 4,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\deer\\deer_train_01752.jpg",
+      "class_name": "deer",
+      "class_index": 4,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\deer\\deer_train_01765.jpg",
+      "class_name": "deer",
+      "class_index": 4,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\deer\\deer_train_01776.jpg",
+      "class_name": "deer",
+      "class_index": 4,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\deer\\deer_train_01780.jpg",
+      "class_name": "deer",
+      "class_index": 4,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\deer\\deer_train_01788.jpg",
+      "class_name": "deer",
+      "class_index": 4,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\deer\\deer_train_01823.jpg",
+      "class_name": "deer",
+      "class_index": 4,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\deer\\deer_train_01825.jpg",
+      "class_name": "deer",
+      "class_index": 4,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\deer\\deer_train_01838.jpg",
+      "class_name": "deer",
+      "class_index": 4,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\deer\\deer_train_01842.jpg",
+      "class_name": "deer",
+      "class_index": 4,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\deer\\deer_train_01882.jpg",
+      "class_name": "deer",
+      "class_index": 4,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\deer\\deer_train_01889.jpg",
+      "class_name": "deer",
+      "class_index": 4,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\deer\\deer_train_01890.jpg",
+      "class_name": "deer",
+      "class_index": 4,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\deer\\deer_train_01895.jpg",
+      "class_name": "deer",
+      "class_index": 4,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\deer\\deer_train_01903.jpg",
+      "class_name": "deer",
+      "class_index": 4,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\deer\\deer_train_01945.jpg",
+      "class_name": "deer",
+      "class_index": 4,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\deer\\deer_train_01949.jpg",
+      "class_name": "deer",
+      "class_index": 4,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\deer\\deer_train_01957.jpg",
+      "class_name": "deer",
+      "class_index": 4,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\deer\\deer_train_01958.jpg",
+      "class_name": "deer",
+      "class_index": 4,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\deer\\deer_train_01960.jpg",
+      "class_name": "deer",
+      "class_index": 4,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\deer\\deer_train_01969.jpg",
+      "class_name": "deer",
+      "class_index": 4,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\deer\\deer_train_01987.jpg",
+      "class_name": "deer",
+      "class_index": 4,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\deer\\deer_train_01997.jpg",
+      "class_name": "deer",
+      "class_index": 4,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\deer\\deer_train_02025.jpg",
+      "class_name": "deer",
+      "class_index": 4,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\deer\\deer_train_02029.jpg",
+      "class_name": "deer",
+      "class_index": 4,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\deer\\deer_train_02043.jpg",
+      "class_name": "deer",
+      "class_index": 4,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\deer\\deer_train_02053.jpg",
+      "class_name": "deer",
+      "class_index": 4,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\deer\\deer_train_02056.jpg",
+      "class_name": "deer",
+      "class_index": 4,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\deer\\deer_train_02083.jpg",
+      "class_name": "deer",
+      "class_index": 4,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\deer\\deer_train_02096.jpg",
+      "class_name": "deer",
+      "class_index": 4,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\deer\\deer_train_02099.jpg",
+      "class_name": "deer",
+      "class_index": 4,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\deer\\deer_train_02128.jpg",
+      "class_name": "deer",
+      "class_index": 4,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\deer\\deer_train_02130.jpg",
+      "class_name": "deer",
+      "class_index": 4,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\deer\\deer_train_02157.jpg",
+      "class_name": "deer",
+      "class_index": 4,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\deer\\deer_train_02162.jpg",
+      "class_name": "deer",
+      "class_index": 4,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\deer\\deer_train_02178.jpg",
+      "class_name": "deer",
+      "class_index": 4,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\deer\\deer_train_02194.jpg",
+      "class_name": "deer",
+      "class_index": 4,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\deer\\deer_train_02203.jpg",
+      "class_name": "deer",
+      "class_index": 4,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\deer\\deer_train_02206.jpg",
+      "class_name": "deer",
+      "class_index": 4,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\deer\\deer_train_02207.jpg",
+      "class_name": "deer",
+      "class_index": 4,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\deer\\deer_train_02242.jpg",
+      "class_name": "deer",
+      "class_index": 4,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\deer\\deer_train_02305.jpg",
+      "class_name": "deer",
+      "class_index": 4,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\deer\\deer_train_02306.jpg",
+      "class_name": "deer",
+      "class_index": 4,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\deer\\deer_train_02314.jpg",
+      "class_name": "deer",
+      "class_index": 4,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\deer\\deer_train_02318.jpg",
+      "class_name": "deer",
+      "class_index": 4,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\deer\\deer_train_02345.jpg",
+      "class_name": "deer",
+      "class_index": 4,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\deer\\deer_train_02361.jpg",
+      "class_name": "deer",
+      "class_index": 4,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\deer\\deer_train_02368.jpg",
+      "class_name": "deer",
+      "class_index": 4,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\deer\\deer_train_02390.jpg",
+      "class_name": "deer",
+      "class_index": 4,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\deer\\deer_train_02402.jpg",
+      "class_name": "deer",
+      "class_index": 4,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\deer\\deer_train_02408.jpg",
+      "class_name": "deer",
+      "class_index": 4,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\deer\\deer_train_02482.jpg",
+      "class_name": "deer",
+      "class_index": 4,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\deer\\deer_train_02491.jpg",
+      "class_name": "deer",
+      "class_index": 4,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\deer\\deer_train_02499.jpg",
+      "class_name": "deer",
+      "class_index": 4,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\deer\\deer_train_02527.jpg",
+      "class_name": "deer",
+      "class_index": 4,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\deer\\deer_train_02551.jpg",
+      "class_name": "deer",
+      "class_index": 4,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\deer\\deer_train_02588.jpg",
+      "class_name": "deer",
+      "class_index": 4,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\deer\\deer_train_02599.jpg",
+      "class_name": "deer",
+      "class_index": 4,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\deer\\deer_train_02610.jpg",
+      "class_name": "deer",
+      "class_index": 4,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\deer\\deer_train_02628.jpg",
+      "class_name": "deer",
+      "class_index": 4,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\deer\\deer_train_02630.jpg",
+      "class_name": "deer",
+      "class_index": 4,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\deer\\deer_train_02633.jpg",
+      "class_name": "deer",
+      "class_index": 4,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\deer\\deer_train_02640.jpg",
+      "class_name": "deer",
+      "class_index": 4,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\deer\\deer_train_02656.jpg",
+      "class_name": "deer",
+      "class_index": 4,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\dog\\dog_train_00070.jpg",
+      "class_name": "dog",
+      "class_index": 5,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\dog\\dog_train_00092.jpg",
+      "class_name": "dog",
+      "class_index": 5,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\dog\\dog_train_00126.jpg",
+      "class_name": "dog",
+      "class_index": 5,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\dog\\dog_train_00143.jpg",
+      "class_name": "dog",
+      "class_index": 5,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\dog\\dog_train_00157.jpg",
+      "class_name": "dog",
+      "class_index": 5,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\dog\\dog_train_00167.jpg",
+      "class_name": "dog",
+      "class_index": 5,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\dog\\dog_train_00172.jpg",
+      "class_name": "dog",
+      "class_index": 5,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\dog\\dog_train_00192.jpg",
+      "class_name": "dog",
+      "class_index": 5,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\dog\\dog_train_00207.jpg",
+      "class_name": "dog",
+      "class_index": 5,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\dog\\dog_train_00228.jpg",
+      "class_name": "dog",
+      "class_index": 5,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\dog\\dog_train_00231.jpg",
+      "class_name": "dog",
+      "class_index": 5,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\dog\\dog_train_00285.jpg",
+      "class_name": "dog",
+      "class_index": 5,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\dog\\dog_train_00317.jpg",
+      "class_name": "dog",
+      "class_index": 5,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\dog\\dog_train_00335.jpg",
+      "class_name": "dog",
+      "class_index": 5,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\dog\\dog_train_00368.jpg",
+      "class_name": "dog",
+      "class_index": 5,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\dog\\dog_train_00373.jpg",
+      "class_name": "dog",
+      "class_index": 5,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\dog\\dog_train_00395.jpg",
+      "class_name": "dog",
+      "class_index": 5,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\dog\\dog_train_00423.jpg",
+      "class_name": "dog",
+      "class_index": 5,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\dog\\dog_train_00447.jpg",
+      "class_name": "dog",
+      "class_index": 5,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\dog\\dog_train_00482.jpg",
+      "class_name": "dog",
+      "class_index": 5,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\dog\\dog_train_00521.jpg",
+      "class_name": "dog",
+      "class_index": 5,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\dog\\dog_train_00528.jpg",
+      "class_name": "dog",
+      "class_index": 5,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\dog\\dog_train_00546.jpg",
+      "class_name": "dog",
+      "class_index": 5,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\dog\\dog_train_00555.jpg",
+      "class_name": "dog",
+      "class_index": 5,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\dog\\dog_train_00575.jpg",
+      "class_name": "dog",
+      "class_index": 5,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\dog\\dog_train_00580.jpg",
+      "class_name": "dog",
+      "class_index": 5,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\dog\\dog_train_00618.jpg",
+      "class_name": "dog",
+      "class_index": 5,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\dog\\dog_train_00630.jpg",
+      "class_name": "dog",
+      "class_index": 5,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\dog\\dog_train_00658.jpg",
+      "class_name": "dog",
+      "class_index": 5,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\dog\\dog_train_00683.jpg",
+      "class_name": "dog",
+      "class_index": 5,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\dog\\dog_train_00689.jpg",
+      "class_name": "dog",
+      "class_index": 5,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\dog\\dog_train_00713.jpg",
+      "class_name": "dog",
+      "class_index": 5,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\dog\\dog_train_00727.jpg",
+      "class_name": "dog",
+      "class_index": 5,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\dog\\dog_train_00776.jpg",
+      "class_name": "dog",
+      "class_index": 5,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\dog\\dog_train_00781.jpg",
+      "class_name": "dog",
+      "class_index": 5,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\dog\\dog_train_00789.jpg",
+      "class_name": "dog",
+      "class_index": 5,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\dog\\dog_train_00838.jpg",
+      "class_name": "dog",
+      "class_index": 5,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\dog\\dog_train_00843.jpg",
+      "class_name": "dog",
+      "class_index": 5,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\dog\\dog_train_00850.jpg",
+      "class_name": "dog",
+      "class_index": 5,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\dog\\dog_train_00864.jpg",
+      "class_name": "dog",
+      "class_index": 5,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\dog\\dog_train_00884.jpg",
+      "class_name": "dog",
+      "class_index": 5,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\dog\\dog_train_00885.jpg",
+      "class_name": "dog",
+      "class_index": 5,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\dog\\dog_train_00915.jpg",
+      "class_name": "dog",
+      "class_index": 5,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\dog\\dog_train_00917.jpg",
+      "class_name": "dog",
+      "class_index": 5,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\dog\\dog_train_00930.jpg",
+      "class_name": "dog",
+      "class_index": 5,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\dog\\dog_train_00964.jpg",
+      "class_name": "dog",
+      "class_index": 5,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\dog\\dog_train_01000.jpg",
+      "class_name": "dog",
+      "class_index": 5,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\dog\\dog_train_01005.jpg",
+      "class_name": "dog",
+      "class_index": 5,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\dog\\dog_train_01025.jpg",
+      "class_name": "dog",
+      "class_index": 5,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\dog\\dog_train_01027.jpg",
+      "class_name": "dog",
+      "class_index": 5,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\dog\\dog_train_01081.jpg",
+      "class_name": "dog",
+      "class_index": 5,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\dog\\dog_train_01101.jpg",
+      "class_name": "dog",
+      "class_index": 5,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\dog\\dog_train_01113.jpg",
+      "class_name": "dog",
+      "class_index": 5,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\dog\\dog_train_01117.jpg",
+      "class_name": "dog",
+      "class_index": 5,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\dog\\dog_train_01122.jpg",
+      "class_name": "dog",
+      "class_index": 5,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\dog\\dog_train_01143.jpg",
+      "class_name": "dog",
+      "class_index": 5,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\dog\\dog_train_01161.jpg",
+      "class_name": "dog",
+      "class_index": 5,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\dog\\dog_train_01241.jpg",
+      "class_name": "dog",
+      "class_index": 5,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\dog\\dog_train_01298.jpg",
+      "class_name": "dog",
+      "class_index": 5,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\dog\\dog_train_01315.jpg",
+      "class_name": "dog",
+      "class_index": 5,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\dog\\dog_train_01331.jpg",
+      "class_name": "dog",
+      "class_index": 5,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\dog\\dog_train_01403.jpg",
+      "class_name": "dog",
+      "class_index": 5,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\dog\\dog_train_01419.jpg",
+      "class_name": "dog",
+      "class_index": 5,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\dog\\dog_train_01446.jpg",
+      "class_name": "dog",
+      "class_index": 5,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\dog\\dog_train_01452.jpg",
+      "class_name": "dog",
+      "class_index": 5,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\dog\\dog_train_01476.jpg",
+      "class_name": "dog",
+      "class_index": 5,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\dog\\dog_train_01492.jpg",
+      "class_name": "dog",
+      "class_index": 5,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\dog\\dog_train_01527.jpg",
+      "class_name": "dog",
+      "class_index": 5,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\dog\\dog_train_01529.jpg",
+      "class_name": "dog",
+      "class_index": 5,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\dog\\dog_train_01542.jpg",
+      "class_name": "dog",
+      "class_index": 5,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\dog\\dog_train_01582.jpg",
+      "class_name": "dog",
+      "class_index": 5,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\dog\\dog_train_01583.jpg",
+      "class_name": "dog",
+      "class_index": 5,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\dog\\dog_train_01585.jpg",
+      "class_name": "dog",
+      "class_index": 5,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\dog\\dog_train_01588.jpg",
+      "class_name": "dog",
+      "class_index": 5,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\dog\\dog_train_01616.jpg",
+      "class_name": "dog",
+      "class_index": 5,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\dog\\dog_train_01635.jpg",
+      "class_name": "dog",
+      "class_index": 5,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\dog\\dog_train_01650.jpg",
+      "class_name": "dog",
+      "class_index": 5,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\dog\\dog_train_01658.jpg",
+      "class_name": "dog",
+      "class_index": 5,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\dog\\dog_train_01659.jpg",
+      "class_name": "dog",
+      "class_index": 5,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\dog\\dog_train_01660.jpg",
+      "class_name": "dog",
+      "class_index": 5,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\dog\\dog_train_01676.jpg",
+      "class_name": "dog",
+      "class_index": 5,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\dog\\dog_train_01693.jpg",
+      "class_name": "dog",
+      "class_index": 5,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\dog\\dog_train_01698.jpg",
+      "class_name": "dog",
+      "class_index": 5,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\dog\\dog_train_01734.jpg",
+      "class_name": "dog",
+      "class_index": 5,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\dog\\dog_train_01744.jpg",
+      "class_name": "dog",
+      "class_index": 5,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\dog\\dog_train_01760.jpg",
+      "class_name": "dog",
+      "class_index": 5,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\dog\\dog_train_01767.jpg",
+      "class_name": "dog",
+      "class_index": 5,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\dog\\dog_train_01786.jpg",
+      "class_name": "dog",
+      "class_index": 5,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\dog\\dog_train_01796.jpg",
+      "class_name": "dog",
+      "class_index": 5,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\dog\\dog_train_01810.jpg",
+      "class_name": "dog",
+      "class_index": 5,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\dog\\dog_train_01826.jpg",
+      "class_name": "dog",
+      "class_index": 5,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\dog\\dog_train_01835.jpg",
+      "class_name": "dog",
+      "class_index": 5,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\dog\\dog_train_01836.jpg",
+      "class_name": "dog",
+      "class_index": 5,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\dog\\dog_train_01910.jpg",
+      "class_name": "dog",
+      "class_index": 5,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\dog\\dog_train_01918.jpg",
+      "class_name": "dog",
+      "class_index": 5,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\dog\\dog_train_01923.jpg",
+      "class_name": "dog",
+      "class_index": 5,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\dog\\dog_train_01941.jpg",
+      "class_name": "dog",
+      "class_index": 5,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\dog\\dog_train_01946.jpg",
+      "class_name": "dog",
+      "class_index": 5,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\dog\\dog_train_01980.jpg",
+      "class_name": "dog",
+      "class_index": 5,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\dog\\dog_train_02012.jpg",
+      "class_name": "dog",
+      "class_index": 5,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\dog\\dog_train_02039.jpg",
+      "class_name": "dog",
+      "class_index": 5,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\dog\\dog_train_02049.jpg",
+      "class_name": "dog",
+      "class_index": 5,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\dog\\dog_train_02055.jpg",
+      "class_name": "dog",
+      "class_index": 5,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\dog\\dog_train_02074.jpg",
+      "class_name": "dog",
+      "class_index": 5,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\dog\\dog_train_02089.jpg",
+      "class_name": "dog",
+      "class_index": 5,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\dog\\dog_train_02102.jpg",
+      "class_name": "dog",
+      "class_index": 5,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\dog\\dog_train_02110.jpg",
+      "class_name": "dog",
+      "class_index": 5,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\dog\\dog_train_02113.jpg",
+      "class_name": "dog",
+      "class_index": 5,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\dog\\dog_train_02139.jpg",
+      "class_name": "dog",
+      "class_index": 5,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\dog\\dog_train_02171.jpg",
+      "class_name": "dog",
+      "class_index": 5,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\dog\\dog_train_02181.jpg",
+      "class_name": "dog",
+      "class_index": 5,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\dog\\dog_train_02187.jpg",
+      "class_name": "dog",
+      "class_index": 5,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\dog\\dog_train_02189.jpg",
+      "class_name": "dog",
+      "class_index": 5,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\dog\\dog_train_02191.jpg",
+      "class_name": "dog",
+      "class_index": 5,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\dog\\dog_train_02257.jpg",
+      "class_name": "dog",
+      "class_index": 5,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\dog\\dog_train_02315.jpg",
+      "class_name": "dog",
+      "class_index": 5,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\dog\\dog_train_02321.jpg",
+      "class_name": "dog",
+      "class_index": 5,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\dog\\dog_train_02331.jpg",
+      "class_name": "dog",
+      "class_index": 5,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\dog\\dog_train_02349.jpg",
+      "class_name": "dog",
+      "class_index": 5,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\dog\\dog_train_02398.jpg",
+      "class_name": "dog",
+      "class_index": 5,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\dog\\dog_train_02414.jpg",
+      "class_name": "dog",
+      "class_index": 5,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\dog\\dog_train_02419.jpg",
+      "class_name": "dog",
+      "class_index": 5,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\dog\\dog_train_02470.jpg",
+      "class_name": "dog",
+      "class_index": 5,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\dog\\dog_train_02503.jpg",
+      "class_name": "dog",
+      "class_index": 5,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\dog\\dog_train_02509.jpg",
+      "class_name": "dog",
+      "class_index": 5,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\dog\\dog_train_02515.jpg",
+      "class_name": "dog",
+      "class_index": 5,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\dog\\dog_train_02571.jpg",
+      "class_name": "dog",
+      "class_index": 5,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\dog\\dog_train_02573.jpg",
+      "class_name": "dog",
+      "class_index": 5,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\dog\\dog_train_02577.jpg",
+      "class_name": "dog",
+      "class_index": 5,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\dog\\dog_train_02584.jpg",
+      "class_name": "dog",
+      "class_index": 5,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\dog\\dog_train_02593.jpg",
+      "class_name": "dog",
+      "class_index": 5,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\dog\\dog_train_02602.jpg",
+      "class_name": "dog",
+      "class_index": 5,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\dog\\dog_train_02609.jpg",
+      "class_name": "dog",
+      "class_index": 5,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\dog\\dog_train_02621.jpg",
+      "class_name": "dog",
+      "class_index": 5,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\dog\\dog_train_02649.jpg",
+      "class_name": "dog",
+      "class_index": 5,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\dog\\dog_train_02651.jpg",
+      "class_name": "dog",
+      "class_index": 5,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\snail\\snail_train_00145.jpg",
+      "class_name": "snail",
+      "class_index": 6,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\snail\\snail_train_00232.jpg",
+      "class_name": "snail",
+      "class_index": 6,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\snail\\snail_train_00234.jpg",
+      "class_name": "snail",
+      "class_index": 6,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\snail\\snail_train_00425.jpg",
+      "class_name": "snail",
+      "class_index": 6,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\snail\\snail_train_00443.jpg",
+      "class_name": "snail",
+      "class_index": 6,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\snail\\snail_train_00603.jpg",
+      "class_name": "snail",
+      "class_index": 6,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\snail\\snail_train_00615.jpg",
+      "class_name": "snail",
+      "class_index": 6,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\snail\\snail_train_00660.jpg",
+      "class_name": "snail",
+      "class_index": 6,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\snail\\snail_train_00673.jpg",
+      "class_name": "snail",
+      "class_index": 6,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\snail\\snail_train_00894.jpg",
+      "class_name": "snail",
+      "class_index": 6,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\snail\\snail_train_00988.jpg",
+      "class_name": "snail",
+      "class_index": 6,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\snail\\snail_train_01199.jpg",
+      "class_name": "snail",
+      "class_index": 6,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\snail\\snail_train_01215.jpg",
+      "class_name": "snail",
+      "class_index": 6,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\snail\\snail_train_01376.jpg",
+      "class_name": "snail",
+      "class_index": 6,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\snail\\snail_train_01394.jpg",
+      "class_name": "snail",
+      "class_index": 6,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\snail\\snail_train_01395.jpg",
+      "class_name": "snail",
+      "class_index": 6,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\snail\\snail_train_01439.jpg",
+      "class_name": "snail",
+      "class_index": 6,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\snail\\snail_train_01504.jpg",
+      "class_name": "snail",
+      "class_index": 6,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\snail\\snail_train_01545.jpg",
+      "class_name": "snail",
+      "class_index": 6,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\snail\\snail_train_01599.jpg",
+      "class_name": "snail",
+      "class_index": 6,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\snail\\snail_train_01669.jpg",
+      "class_name": "snail",
+      "class_index": 6,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\snail\\snail_train_01740.jpg",
+      "class_name": "snail",
+      "class_index": 6,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\snail\\snail_train_01896.jpg",
+      "class_name": "snail",
+      "class_index": 6,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\snail\\snail_train_01931.jpg",
+      "class_name": "snail",
+      "class_index": 6,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\snail\\snail_train_01947.jpg",
+      "class_name": "snail",
+      "class_index": 6,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\snail\\snail_train_01955.jpg",
+      "class_name": "snail",
+      "class_index": 6,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\snail\\snail_train_02057.jpg",
+      "class_name": "snail",
+      "class_index": 6,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\snail\\snail_train_02296.jpg",
+      "class_name": "snail",
+      "class_index": 6,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\snail\\snail_train_02327.jpg",
+      "class_name": "snail",
+      "class_index": 6,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\snail\\snail_train_02427.jpg",
+      "class_name": "snail",
+      "class_index": 6,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\snail\\snail_train_02439.jpg",
+      "class_name": "snail",
+      "class_index": 6,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\snail\\snail_train_02616.jpg",
+      "class_name": "snail",
+      "class_index": 6,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\swan\\swan_train_00022.jpg",
+      "class_name": "swan",
+      "class_index": 7,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\swan\\swan_train_00037.jpg",
+      "class_name": "swan",
+      "class_index": 7,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\swan\\swan_train_00137.jpg",
+      "class_name": "swan",
+      "class_index": 7,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\swan\\swan_train_00328.jpg",
+      "class_name": "swan",
+      "class_index": 7,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\swan\\swan_train_00366.jpg",
+      "class_name": "swan",
+      "class_index": 7,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\swan\\swan_train_00390.jpg",
+      "class_name": "swan",
+      "class_index": 7,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\swan\\swan_train_00584.jpg",
+      "class_name": "swan",
+      "class_index": 7,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\swan\\swan_train_00587.jpg",
+      "class_name": "swan",
+      "class_index": 7,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\swan\\swan_train_00589.jpg",
+      "class_name": "swan",
+      "class_index": 7,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\swan\\swan_train_00796.jpg",
+      "class_name": "swan",
+      "class_index": 7,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\swan\\swan_train_00803.jpg",
+      "class_name": "swan",
+      "class_index": 7,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\swan\\swan_train_01128.jpg",
+      "class_name": "swan",
+      "class_index": 7,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\swan\\swan_train_01149.jpg",
+      "class_name": "swan",
+      "class_index": 7,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\swan\\swan_train_01186.jpg",
+      "class_name": "swan",
+      "class_index": 7,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\swan\\swan_train_01337.jpg",
+      "class_name": "swan",
+      "class_index": 7,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\swan\\swan_train_01412.jpg",
+      "class_name": "swan",
+      "class_index": 7,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\swan\\swan_train_02013.jpg",
+      "class_name": "swan",
+      "class_index": 7,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\swan\\swan_train_02065.jpg",
+      "class_name": "swan",
+      "class_index": 7,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\swan\\swan_train_02108.jpg",
+      "class_name": "swan",
+      "class_index": 7,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\swan\\swan_train_02153.jpg",
+      "class_name": "swan",
+      "class_index": 7,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\swan\\swan_train_02274.jpg",
+      "class_name": "swan",
+      "class_index": 7,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\train\\swan\\swan_train_02433.jpg",
+      "class_name": "swan",
+      "class_index": 7,
+      "split": "train",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\val\\bird\\bird_val_00003.jpg",
+      "class_name": "bird",
+      "class_index": 0,
+      "split": "val",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\val\\bird\\bird_val_00019.jpg",
+      "class_name": "bird",
+      "class_index": 0,
+      "split": "val",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\val\\bird\\bird_val_00023.jpg",
+      "class_name": "bird",
+      "class_index": 0,
+      "split": "val",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\val\\bird\\bird_val_00058.jpg",
+      "class_name": "bird",
+      "class_index": 0,
+      "split": "val",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\val\\bird\\bird_val_00143.jpg",
+      "class_name": "bird",
+      "class_index": 0,
+      "split": "val",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\val\\bird\\bird_val_00180.jpg",
+      "class_name": "bird",
+      "class_index": 0,
+      "split": "val",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\val\\bird\\bird_val_00201.jpg",
+      "class_name": "bird",
+      "class_index": 0,
+      "split": "val",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\val\\bird\\bird_val_00271.jpg",
+      "class_name": "bird",
+      "class_index": 0,
+      "split": "val",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\val\\bird\\bird_val_00321.jpg",
+      "class_name": "bird",
+      "class_index": 0,
+      "split": "val",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\val\\bird\\bird_val_00373.jpg",
+      "class_name": "bird",
+      "class_index": 0,
+      "split": "val",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\val\\bird\\bird_val_00377.jpg",
+      "class_name": "bird",
+      "class_index": 0,
+      "split": "val",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\val\\bird\\bird_val_00442.jpg",
+      "class_name": "bird",
+      "class_index": 0,
+      "split": "val",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\val\\bird\\bird_val_00581.jpg",
+      "class_name": "bird",
+      "class_index": 0,
+      "split": "val",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\val\\bird\\bird_val_00611.jpg",
+      "class_name": "bird",
+      "class_index": 0,
+      "split": "val",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\val\\bird\\bird_val_00638.jpg",
+      "class_name": "bird",
+      "class_index": 0,
+      "split": "val",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\val\\bird\\bird_val_00644.jpg",
+      "class_name": "bird",
+      "class_index": 0,
+      "split": "val",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\val\\cat\\cat_val_00014.jpg",
+      "class_name": "cat",
+      "class_index": 1,
+      "split": "val",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\val\\cat\\cat_val_00018.jpg",
+      "class_name": "cat",
+      "class_index": 1,
+      "split": "val",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\val\\cat\\cat_val_00069.jpg",
+      "class_name": "cat",
+      "class_index": 1,
+      "split": "val",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\val\\cat\\cat_val_00073.jpg",
+      "class_name": "cat",
+      "class_index": 1,
+      "split": "val",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\val\\cat\\cat_val_00083.jpg",
+      "class_name": "cat",
+      "class_index": 1,
+      "split": "val",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\val\\cat\\cat_val_00105.jpg",
+      "class_name": "cat",
+      "class_index": 1,
+      "split": "val",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\val\\cat\\cat_val_00116.jpg",
+      "class_name": "cat",
+      "class_index": 1,
+      "split": "val",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\val\\cat\\cat_val_00189.jpg",
+      "class_name": "cat",
+      "class_index": 1,
+      "split": "val",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\val\\cat\\cat_val_00208.jpg",
+      "class_name": "cat",
+      "class_index": 1,
+      "split": "val",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\val\\cat\\cat_val_00239.jpg",
+      "class_name": "cat",
+      "class_index": 1,
+      "split": "val",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\val\\cat\\cat_val_00294.jpg",
+      "class_name": "cat",
+      "class_index": 1,
+      "split": "val",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\val\\cat\\cat_val_00410.jpg",
+      "class_name": "cat",
+      "class_index": 1,
+      "split": "val",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\val\\cat\\cat_val_00465.jpg",
+      "class_name": "cat",
+      "class_index": 1,
+      "split": "val",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\val\\cat\\cat_val_00471.jpg",
+      "class_name": "cat",
+      "class_index": 1,
+      "split": "val",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\val\\cat\\cat_val_00500.jpg",
+      "class_name": "cat",
+      "class_index": 1,
+      "split": "val",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\val\\cat\\cat_val_00507.jpg",
+      "class_name": "cat",
+      "class_index": 1,
+      "split": "val",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\val\\cat\\cat_val_00511.jpg",
+      "class_name": "cat",
+      "class_index": 1,
+      "split": "val",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\val\\cat\\cat_val_00532.jpg",
+      "class_name": "cat",
+      "class_index": 1,
+      "split": "val",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\val\\cat\\cat_val_00563.jpg",
+      "class_name": "cat",
+      "class_index": 1,
+      "split": "val",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\val\\cat\\cat_val_00596.jpg",
+      "class_name": "cat",
+      "class_index": 1,
+      "split": "val",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\val\\cat\\cat_val_00646.jpg",
+      "class_name": "cat",
+      "class_index": 1,
+      "split": "val",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\val\\llama\\llama_val_00045.jpg",
+      "class_name": "llama",
+      "class_index": 2,
+      "split": "val",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\val\\llama\\llama_val_00079.jpg",
+      "class_name": "llama",
+      "class_index": 2,
+      "split": "val",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\val\\llama\\llama_val_00192.jpg",
+      "class_name": "llama",
+      "class_index": 2,
+      "split": "val",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\val\\rabbit\\rabbit_val_00062.jpg",
+      "class_name": "rabbit",
+      "class_index": 3,
+      "split": "val",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\val\\rabbit\\rabbit_val_00085.jpg",
+      "class_name": "rabbit",
+      "class_index": 3,
+      "split": "val",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\val\\rabbit\\rabbit_val_00097.jpg",
+      "class_name": "rabbit",
+      "class_index": 3,
+      "split": "val",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\val\\rabbit\\rabbit_val_00104.jpg",
+      "class_name": "rabbit",
+      "class_index": 3,
+      "split": "val",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\val\\rabbit\\rabbit_val_00204.jpg",
+      "class_name": "rabbit",
+      "class_index": 3,
+      "split": "val",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\val\\rabbit\\rabbit_val_00230.jpg",
+      "class_name": "rabbit",
+      "class_index": 3,
+      "split": "val",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\val\\rabbit\\rabbit_val_00324.jpg",
+      "class_name": "rabbit",
+      "class_index": 3,
+      "split": "val",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\val\\rabbit\\rabbit_val_00327.jpg",
+      "class_name": "rabbit",
+      "class_index": 3,
+      "split": "val",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\val\\rabbit\\rabbit_val_00332.jpg",
+      "class_name": "rabbit",
+      "class_index": 3,
+      "split": "val",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\val\\rabbit\\rabbit_val_00348.jpg",
+      "class_name": "rabbit",
+      "class_index": 3,
+      "split": "val",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\val\\rabbit\\rabbit_val_00352.jpg",
+      "class_name": "rabbit",
+      "class_index": 3,
+      "split": "val",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\val\\rabbit\\rabbit_val_00387.jpg",
+      "class_name": "rabbit",
+      "class_index": 3,
+      "split": "val",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\val\\rabbit\\rabbit_val_00422.jpg",
+      "class_name": "rabbit",
+      "class_index": 3,
+      "split": "val",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\val\\rabbit\\rabbit_val_00424.jpg",
+      "class_name": "rabbit",
+      "class_index": 3,
+      "split": "val",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\val\\rabbit\\rabbit_val_00517.jpg",
+      "class_name": "rabbit",
+      "class_index": 3,
+      "split": "val",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\val\\deer\\deer_val_00005.jpg",
+      "class_name": "deer",
+      "class_index": 4,
+      "split": "val",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\val\\deer\\deer_val_00009.jpg",
+      "class_name": "deer",
+      "class_index": 4,
+      "split": "val",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\val\\deer\\deer_val_00066.jpg",
+      "class_name": "deer",
+      "class_index": 4,
+      "split": "val",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\val\\deer\\deer_val_00081.jpg",
+      "class_name": "deer",
+      "class_index": 4,
+      "split": "val",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\val\\deer\\deer_val_00092.jpg",
+      "class_name": "deer",
+      "class_index": 4,
+      "split": "val",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\val\\deer\\deer_val_00191.jpg",
+      "class_name": "deer",
+      "class_index": 4,
+      "split": "val",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\val\\deer\\deer_val_00219.jpg",
+      "class_name": "deer",
+      "class_index": 4,
+      "split": "val",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\val\\deer\\deer_val_00226.jpg",
+      "class_name": "deer",
+      "class_index": 4,
+      "split": "val",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\val\\deer\\deer_val_00227.jpg",
+      "class_name": "deer",
+      "class_index": 4,
+      "split": "val",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\val\\deer\\deer_val_00233.jpg",
+      "class_name": "deer",
+      "class_index": 4,
+      "split": "val",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\val\\deer\\deer_val_00254.jpg",
+      "class_name": "deer",
+      "class_index": 4,
+      "split": "val",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\val\\deer\\deer_val_00260.jpg",
+      "class_name": "deer",
+      "class_index": 4,
+      "split": "val",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\val\\deer\\deer_val_00274.jpg",
+      "class_name": "deer",
+      "class_index": 4,
+      "split": "val",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\val\\deer\\deer_val_00281.jpg",
+      "class_name": "deer",
+      "class_index": 4,
+      "split": "val",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\val\\deer\\deer_val_00283.jpg",
+      "class_name": "deer",
+      "class_index": 4,
+      "split": "val",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\val\\deer\\deer_val_00290.jpg",
+      "class_name": "deer",
+      "class_index": 4,
+      "split": "val",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\val\\deer\\deer_val_00296.jpg",
+      "class_name": "deer",
+      "class_index": 4,
+      "split": "val",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\val\\deer\\deer_val_00298.jpg",
+      "class_name": "deer",
+      "class_index": 4,
+      "split": "val",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\val\\deer\\deer_val_00300.jpg",
+      "class_name": "deer",
+      "class_index": 4,
+      "split": "val",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\val\\deer\\deer_val_00304.jpg",
+      "class_name": "deer",
+      "class_index": 4,
+      "split": "val",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\val\\deer\\deer_val_00320.jpg",
+      "class_name": "deer",
+      "class_index": 4,
+      "split": "val",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\val\\deer\\deer_val_00328.jpg",
+      "class_name": "deer",
+      "class_index": 4,
+      "split": "val",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\val\\deer\\deer_val_00331.jpg",
+      "class_name": "deer",
+      "class_index": 4,
+      "split": "val",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\val\\deer\\deer_val_00404.jpg",
+      "class_name": "deer",
+      "class_index": 4,
+      "split": "val",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\val\\deer\\deer_val_00406.jpg",
+      "class_name": "deer",
+      "class_index": 4,
+      "split": "val",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\val\\deer\\deer_val_00413.jpg",
+      "class_name": "deer",
+      "class_index": 4,
+      "split": "val",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\val\\deer\\deer_val_00419.jpg",
+      "class_name": "deer",
+      "class_index": 4,
+      "split": "val",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\val\\deer\\deer_val_00429.jpg",
+      "class_name": "deer",
+      "class_index": 4,
+      "split": "val",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\val\\deer\\deer_val_00459.jpg",
+      "class_name": "deer",
+      "class_index": 4,
+      "split": "val",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\val\\deer\\deer_val_00474.jpg",
+      "class_name": "deer",
+      "class_index": 4,
+      "split": "val",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\val\\deer\\deer_val_00475.jpg",
+      "class_name": "deer",
+      "class_index": 4,
+      "split": "val",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\val\\deer\\deer_val_00476.jpg",
+      "class_name": "deer",
+      "class_index": 4,
+      "split": "val",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\val\\deer\\deer_val_00484.jpg",
+      "class_name": "deer",
+      "class_index": 4,
+      "split": "val",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\val\\deer\\deer_val_00502.jpg",
+      "class_name": "deer",
+      "class_index": 4,
+      "split": "val",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\val\\deer\\deer_val_00537.jpg",
+      "class_name": "deer",
+      "class_index": 4,
+      "split": "val",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\val\\deer\\deer_val_00570.jpg",
+      "class_name": "deer",
+      "class_index": 4,
+      "split": "val",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\val\\deer\\deer_val_00571.jpg",
+      "class_name": "deer",
+      "class_index": 4,
+      "split": "val",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\val\\deer\\deer_val_00584.jpg",
+      "class_name": "deer",
+      "class_index": 4,
+      "split": "val",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\val\\deer\\deer_val_00641.jpg",
+      "class_name": "deer",
+      "class_index": 4,
+      "split": "val",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\val\\dog\\dog_val_00024.jpg",
+      "class_name": "dog",
+      "class_index": 5,
+      "split": "val",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\val\\dog\\dog_val_00038.jpg",
+      "class_name": "dog",
+      "class_index": 5,
+      "split": "val",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\val\\dog\\dog_val_00082.jpg",
+      "class_name": "dog",
+      "class_index": 5,
+      "split": "val",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\val\\dog\\dog_val_00158.jpg",
+      "class_name": "dog",
+      "class_index": 5,
+      "split": "val",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\val\\dog\\dog_val_00168.jpg",
+      "class_name": "dog",
+      "class_index": 5,
+      "split": "val",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\val\\dog\\dog_val_00198.jpg",
+      "class_name": "dog",
+      "class_index": 5,
+      "split": "val",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\val\\dog\\dog_val_00205.jpg",
+      "class_name": "dog",
+      "class_index": 5,
+      "split": "val",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\val\\dog\\dog_val_00246.jpg",
+      "class_name": "dog",
+      "class_index": 5,
+      "split": "val",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\val\\dog\\dog_val_00276.jpg",
+      "class_name": "dog",
+      "class_index": 5,
+      "split": "val",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\val\\dog\\dog_val_00297.jpg",
+      "class_name": "dog",
+      "class_index": 5,
+      "split": "val",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\val\\dog\\dog_val_00313.jpg",
+      "class_name": "dog",
+      "class_index": 5,
+      "split": "val",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\val\\dog\\dog_val_00323.jpg",
+      "class_name": "dog",
+      "class_index": 5,
+      "split": "val",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\val\\dog\\dog_val_00376.jpg",
+      "class_name": "dog",
+      "class_index": 5,
+      "split": "val",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\val\\dog\\dog_val_00380.jpg",
+      "class_name": "dog",
+      "class_index": 5,
+      "split": "val",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\val\\dog\\dog_val_00393.jpg",
+      "class_name": "dog",
+      "class_index": 5,
+      "split": "val",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\val\\dog\\dog_val_00408.jpg",
+      "class_name": "dog",
+      "class_index": 5,
+      "split": "val",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\val\\dog\\dog_val_00428.jpg",
+      "class_name": "dog",
+      "class_index": 5,
+      "split": "val",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\val\\dog\\dog_val_00435.jpg",
+      "class_name": "dog",
+      "class_index": 5,
+      "split": "val",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\val\\dog\\dog_val_00437.jpg",
+      "class_name": "dog",
+      "class_index": 5,
+      "split": "val",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\val\\dog\\dog_val_00449.jpg",
+      "class_name": "dog",
+      "class_index": 5,
+      "split": "val",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\val\\dog\\dog_val_00457.jpg",
+      "class_name": "dog",
+      "class_index": 5,
+      "split": "val",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\val\\dog\\dog_val_00464.jpg",
+      "class_name": "dog",
+      "class_index": 5,
+      "split": "val",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\val\\dog\\dog_val_00503.jpg",
+      "class_name": "dog",
+      "class_index": 5,
+      "split": "val",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\val\\dog\\dog_val_00521.jpg",
+      "class_name": "dog",
+      "class_index": 5,
+      "split": "val",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\val\\dog\\dog_val_00533.jpg",
+      "class_name": "dog",
+      "class_index": 5,
+      "split": "val",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\val\\dog\\dog_val_00544.jpg",
+      "class_name": "dog",
+      "class_index": 5,
+      "split": "val",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\val\\dog\\dog_val_00549.jpg",
+      "class_name": "dog",
+      "class_index": 5,
+      "split": "val",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\val\\dog\\dog_val_00550.jpg",
+      "class_name": "dog",
+      "class_index": 5,
+      "split": "val",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\val\\dog\\dog_val_00558.jpg",
+      "class_name": "dog",
+      "class_index": 5,
+      "split": "val",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\val\\dog\\dog_val_00567.jpg",
+      "class_name": "dog",
+      "class_index": 5,
+      "split": "val",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\val\\dog\\dog_val_00573.jpg",
+      "class_name": "dog",
+      "class_index": 5,
+      "split": "val",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\val\\dog\\dog_val_00579.jpg",
+      "class_name": "dog",
+      "class_index": 5,
+      "split": "val",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\val\\dog\\dog_val_00598.jpg",
+      "class_name": "dog",
+      "class_index": 5,
+      "split": "val",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\val\\dog\\dog_val_00619.jpg",
+      "class_name": "dog",
+      "class_index": 5,
+      "split": "val",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\val\\dog\\dog_val_00620.jpg",
+      "class_name": "dog",
+      "class_index": 5,
+      "split": "val",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\val\\dog\\dog_val_00626.jpg",
+      "class_name": "dog",
+      "class_index": 5,
+      "split": "val",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\val\\dog\\dog_val_00628.jpg",
+      "class_name": "dog",
+      "class_index": 5,
+      "split": "val",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\val\\dog\\dog_val_00639.jpg",
+      "class_name": "dog",
+      "class_index": 5,
+      "split": "val",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\val\\dog\\dog_val_00654.jpg",
+      "class_name": "dog",
+      "class_index": 5,
+      "split": "val",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\val\\dog\\dog_val_00655.jpg",
+      "class_name": "dog",
+      "class_index": 5,
+      "split": "val",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\val\\snail\\snail_val_00036.jpg",
+      "class_name": "snail",
+      "class_index": 6,
+      "split": "val",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\val\\snail\\snail_val_00059.jpg",
+      "class_name": "snail",
+      "class_index": 6,
+      "split": "val",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\val\\snail\\snail_val_00261.jpg",
+      "class_name": "snail",
+      "class_index": 6,
+      "split": "val",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\val\\snail\\snail_val_00345.jpg",
+      "class_name": "snail",
+      "class_index": 6,
+      "split": "val",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\val\\snail\\snail_val_00421.jpg",
+      "class_name": "snail",
+      "class_index": 6,
+      "split": "val",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\val\\snail\\snail_val_00434.jpg",
+      "class_name": "snail",
+      "class_index": 6,
+      "split": "val",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\val\\snail\\snail_val_00447.jpg",
+      "class_name": "snail",
+      "class_index": 6,
+      "split": "val",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\val\\snail\\snail_val_00461.jpg",
+      "class_name": "snail",
+      "class_index": 6,
+      "split": "val",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\val\\snail\\snail_val_00477.jpg",
+      "class_name": "snail",
+      "class_index": 6,
+      "split": "val",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\val\\snail\\snail_val_00562.jpg",
+      "class_name": "snail",
+      "class_index": 6,
+      "split": "val",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\val\\snail\\snail_val_00622.jpg",
+      "class_name": "snail",
+      "class_index": 6,
+      "split": "val",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\val\\snail\\snail_val_00649.jpg",
+      "class_name": "snail",
+      "class_index": 6,
+      "split": "val",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\val\\swan\\swan_val_00170.jpg",
+      "class_name": "swan",
+      "class_index": 7,
+      "split": "val",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\val\\swan\\swan_val_00240.jpg",
+      "class_name": "swan",
+      "class_index": 7,
+      "split": "val",
+      "feature_count": 89
+    },
+    {
+      "image_path": "data\\raw\\val\\swan\\swan_val_00293.jpg",
+      "class_name": "swan",
+      "class_index": 7,
+      "split": "val",
+      "feature_count": 89
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+Shadow-Vision Model Training Report
+========================================
+
+Timestamp: 2025-09-27T17:00:11.200135
+Model Type: k-NN (k=3)
+Training Samples: 1729
+Validation Samples: 409
+Feature Count: 21
+
+Performance Metrics:
+  Accuracy: 0.883
+  Precision: 0.885
+  Recall: 0.883
+  F1-Score: 0.882
+  CV Mean: 0.858 ± 0.014
+
+Classification Report:
+              precision    recall  f1-score   support
+
+        bird       0.89      0.78      0.83        63
+         cat       0.90      0.93      0.92        60
+       llama       0.79      0.72      0.76        43
+      rabbit       0.78      0.90      0.84        84
+        deer       0.96      0.98      0.97        50
+         dog       0.99      0.97      0.98        76
+       snail       0.88      0.78      0.82        18
+        swan       0.86      0.80      0.83        15
+
+    accuracy                           0.88       409
+   macro avg       0.88      0.86      0.87       409
+weighted avg       0.88      0.88      0.88       409

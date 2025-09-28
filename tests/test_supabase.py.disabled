@@ -1,0 +1,314 @@
+#!/usr/bin/env python3
+"""
+Tests for Supabase Integration
+"""
+
+import pytest
+import sys
+from pathlib import Path
+import tempfile
+import json
+
+# Add backend to path
+sys.path.append(str(Path(__file__).parent.parent / "backend"))
+
+from api.supabase_client import SupabaseLogger, MockSupabaseLogger, create_supabase_logger
+
+class TestSupabaseLogger:
+    """Test Supabase logging functionality"""
+
+    def test_mock_logger_creation(self):
+        """Test mock logger creation"""
+        logger = MockSupabaseLogger()
+
+        assert logger.session_id is not None
+        assert isinstance(logger.logs, list)
+        assert len(logger.logs) == 0
+
+    def test_gesture_logging(self):
+        """Test gesture detection logging"""
+        logger = MockSupabaseLogger()
+
+        # Log a gesture
+        success = logger.log_gesture_detection(
+            gesture="dog",
+            confidence=0.95,
+            animation_triggered="bark",
+            user_agent="test_browser"
+        )
+
+        assert success is True
+        assert len(logger.logs) == 1
+
+        log_entry = logger.logs[0]
+        assert log_entry["type"] == "gesture"
+        assert log_entry["data"]["gesture"] == "dog"
+        assert log_entry["data"]["confidence"] == 0.95
+
+    def test_training_metrics_logging(self):
+        """Test training metrics logging"""
+        logger = MockSupabaseLogger()
+
+        # Log training metrics
+        success = logger.log_training_metrics(
+            epoch=5,
+            train_loss=0.3,
+            train_accuracy=85.5,
+            val_loss=0.4,
+            val_accuracy=82.1,
+            model_version="efficient"
+        )
+
+        assert success is True
+        assert len(logger.logs) == 1
+
+        log_entry = logger.logs[0]
+        assert log_entry["type"] == "training"
+        assert log_entry["data"]["epoch"] == 5
+        assert log_entry["data"]["model_version"] == "efficient"
+
+    def test_demo_session_management(self):
+        """Test demo session start/end"""
+        logger = MockSupabaseLogger()
+
+        # Start session
+        session_id = logger.start_demo_session()
+        assert session_id == logger.session_id
+
+        # End session
+        success = logger.end_demo_session(
+            total_gestures=10,
+            successful_detections=8,
+            user_feedback="Great demo!"
+        )
+        assert success is True
+
+    def test_statistics_retrieval(self):
+        """Test statistics retrieval"""
+        logger = MockSupabaseLogger()
+
+        # Add some gesture logs
+        logger.log_gesture_detection("dog", 0.9)
+        logger.log_gesture_detection("bird", 0.8)
+        logger.log_gesture_detection("dog", 0.95)
+
+        stats = logger.get_gesture_statistics()
+
+        assert isinstance(stats, dict)
+        assert "total_gestures" in stats
+        assert "gesture_counts" in stats
+        assert "avg_confidence" in stats
+
+    def test_training_history(self):
+        """Test training history retrieval"""
+        logger = MockSupabaseLogger()
+
+        # Add training logs
+        logger.log_training_metrics(1, 0.5, 80.0, 0.6, 75.0, "efficient")
+        logger.log_training_metrics(2, 0.4, 85.0, 0.5, 80.0, "efficient")
+
+        history = logger.get_training_history()
+
+        assert isinstance(history, list)
+        assert len(history) == 2
+
+    def test_cleanup(self):
+        """Test log cleanup"""
+        logger = MockSupabaseLogger()
+
+        # Cleanup should not fail
+        success = logger.cleanup_old_logs(days_old=30)
+        assert success is True
+
+class TestSupabaseClientCreation:
+    """Test client creation and configuration"""
+
+    def test_create_logger_without_credentials(self):
+        """Test logger creation without credentials"""
+        # Create temporary config without credentials
+        with tempfile.NamedTemporaryFile(mode='w', suffix='.env', delete=False) as f:
+            f.write("# No credentials\n")
+            config_path = f.name
+
+        try:
+            logger = create_supabase_logger(config_path)
+            # Should fallback to mock logger
+            assert isinstance(logger, (SupabaseLogger, MockSupabaseLogger))
+        finally:
+            Path(config_path).unlink()
+
+    def test_logger_session_id_uniqueness(self):
+        """Test that each logger gets unique session ID"""
+        logger1 = MockSupabaseLogger()
+        logger2 = MockSupabaseLogger()
+
+        assert logger1.session_id != logger2.session_id
+
+    def test_logger_methods_exist(self):
+        """Test that all required methods exist"""
+        logger = MockSupabaseLogger()
+
+        required_methods = [
+            'log_gesture_detection',
+            'log_training_metrics',
+            'start_demo_session',
+            'end_demo_session',
+            'get_gesture_statistics',
+            'get_training_history',
+            'cleanup_old_logs'
+        ]
+
+        for method_name in required_methods:
+            assert hasattr(logger, method_name)
+            assert callable(getattr(logger, method_name))
+
+class TestDatabaseConfiguration:
+    """Test database configuration and schema"""
+
+    def test_config_file_loading(self):
+        """Test loading database configuration"""
+        config_path = Path(__file__).parent.parent / "config" / "supabase_config.json"
+
+        if config_path.exists():
+            with open(config_path, 'r') as f:
+                config = json.load(f)
+
+            assert "database" in config
+            assert "tables" in config["database"]
+
+            # Check required tables
+            required_tables = ["gesture_logs", "training_metrics", "demo_sessions"]
+            for table in required_tables:
+                assert table in config["database"]["tables"]
+
+    def test_gesture_data_structure(self):
+        """Test gesture log data structure"""
+        logger = MockSupabaseLogger()
+
+        # Test with all possible fields
+        success = logger.log_gesture_detection(
+            gesture="dog",
+            confidence=0.95,
+            animation_triggered="bark_animation",
+            user_agent="Mozilla/5.0..."
+        )
+
+        assert success is True
+
+        log_entry = logger.logs[0]
+        data = log_entry["data"]
+
+        # Check that all expected fields are present
+        expected_fields = ["gesture", "confidence", "animation_triggered", "user_agent"]
+        for field in expected_fields:
+            assert field in data
+
+    def test_training_data_structure(self):
+        """Test training metrics data structure"""
+        logger = MockSupabaseLogger()
+
+        success = logger.log_training_metrics(
+            epoch=10,
+            train_loss=0.25,
+            train_accuracy=92.5,
+            val_loss=0.35,
+            val_accuracy=89.2,
+            model_version="efficient_v2"
+        )
+
+        assert success is True
+
+        log_entry = logger.logs[0]
+        data = log_entry["data"]
+
+        # Check data types
+        assert isinstance(data["epoch"], int)
+        assert isinstance(data["train_loss"], float)
+        assert isinstance(data["train_accuracy"], float)
+        assert isinstance(data["val_loss"], float)
+        assert isinstance(data["val_accuracy"], float)
+        assert isinstance(data["model_version"], str)
+
+class TestErrorHandling:
+    """Test error handling in Supabase operations"""
+
+    def test_invalid_gesture_data(self):
+        """Test handling of invalid gesture data"""
+        logger = MockSupabaseLogger()
+
+        # These should not crash, even with invalid data
+        success1 = logger.log_gesture_detection(gesture=None, confidence=1.5)
+        success2 = logger.log_gesture_detection(gesture="", confidence=-0.1)
+
+        assert isinstance(success1, bool)
+        assert isinstance(success2, bool)
+
+    def test_invalid_training_data(self):
+        """Test handling of invalid training data"""
+        logger = MockSupabaseLogger()
+
+        # These should not crash
+        success1 = logger.log_training_metrics(
+            epoch=-1, train_loss=float('inf'),
+            train_accuracy=150.0, val_loss=None,
+            val_accuracy=None, model_version=""
+        )
+
+        assert isinstance(success1, bool)
+
+    def test_session_management_edge_cases(self):
+        """Test edge cases in session management"""
+        logger = MockSupabaseLogger()
+
+        # End session without starting it
+        success1 = logger.end_demo_session(0, 0)
+        assert isinstance(success1, bool)
+
+        # Start multiple sessions
+        session1 = logger.start_demo_session()
+        session2 = logger.start_demo_session()
+
+        # Should return the same session ID (logger manages one session)
+        assert session1 == session2 == logger.session_id
+
+def test_integration_workflow():
+    """Test a complete workflow"""
+    logger = MockSupabaseLogger()
+
+    # Start demo session
+    session_id = logger.start_demo_session()
+    assert session_id is not None
+
+    # Log some training metrics
+    for epoch in range(3):
+        logger.log_training_metrics(
+            epoch=epoch,
+            train_loss=0.5 - epoch * 0.1,
+            train_accuracy=80.0 + epoch * 5,
+            val_loss=0.6 - epoch * 0.1,
+            val_accuracy=75.0 + epoch * 5,
+            model_version="test"
+        )
+
+    # Log some gestures
+    gestures = [("dog", 0.9), ("bird", 0.8), ("dog", 0.95), ("rabbit", 0.7)]
+    for gesture, confidence in gestures:
+        logger.log_gesture_detection(gesture, confidence)
+
+    # Get statistics
+    stats = logger.get_gesture_statistics()
+    assert stats["total_gestures"] == len(gestures)
+
+    history = logger.get_training_history()
+    assert len(history) == 3
+
+    # End session
+    success = logger.end_demo_session(
+        total_gestures=len(gestures),
+        successful_detections=3,  # Confidence > 0.8
+        user_feedback="Test completed successfully"
+    )
+    assert success is True
+
+if __name__ == "__main__":
+    pytest.main([__file__, "-v"])

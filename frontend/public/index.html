@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gesture Puppets - Hand Shadow Recognition</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            overflow: hidden;
+        }
+
+        .container {
+            position: relative;
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+        }
+
+        .main-view {
+            flex: 1;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .header {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            z-index: 100;
+            background: rgba(0, 0, 0, 0.7);
+            padding: 15px 20px;
+            border-radius: 10px;
+            backdrop-filter: blur(10px);
+        }
+
+        .header h1 {
+            font-size: 1.5em;
+            margin-bottom: 5px;
+            color: #4FC3F7;
+        }
+
+        .header p {
+            font-size: 0.9em;
+            opacity: 0.8;
+        }
+
+        .three-container {
+            flex: 1;
+            position: relative;
+            background: #000;
+        }
+
+        .camera-overlay {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            width: 320px;
+            height: 240px;
+            border: 3px solid #4FC3F7;
+            border-radius: 10px;
+            overflow: hidden;
+            background: rgba(0, 0, 0, 0.8);
+            z-index: 50;
+        }
+
+        .camera-feed {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .camera-status {
+            position: absolute;
+            bottom: 5px;
+            left: 5px;
+            background: rgba(0, 0, 0, 0.8);
+            padding: 5px 8px;
+            border-radius: 5px;
+            font-size: 0.7em;
+        }
+
+        .gesture-info {
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+            background: rgba(0, 0, 0, 0.8);
+            padding: 20px;
+            border-radius: 10px;
+            backdrop-filter: blur(10px);
+            min-width: 300px;
+            z-index: 100;
+        }
+
+        .gesture-display {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+
+        .gesture-icon {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: #4FC3F7;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 15px;
+            font-size: 1.5em;
+        }
+
+        .gesture-text {
+            flex: 1;
+        }
+
+        .gesture-name {
+            font-size: 1.3em;
+            font-weight: bold;
+            margin-bottom: 5px;
+            text-transform: capitalize;
+        }
+
+        .gesture-confidence {
+            font-size: 0.9em;
+            opacity: 0.8;
+        }
+
+        .confidence-bar {
+            width: 100%;
+            height: 8px;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 4px;
+            overflow: hidden;
+            margin-top: 10px;
+        }
+
+        .confidence-fill {
+            height: 100%;
+            background: linear-gradient(90deg, #ff4444, #ffaa00, #44ff44);
+            transition: width 0.3s ease;
+            border-radius: 4px;
+        }
+
+        .controls {
+            position: absolute;
+            top: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            gap: 10px;
+            z-index: 100;
+        }
+
+        .control-btn {
+            background: rgba(0, 0, 0, 0.7);
+            border: 2px solid #4FC3F7;
+            color: white;
+            padding: 10px 15px;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            backdrop-filter: blur(10px);
+        }
+
+        .control-btn:hover {
+            background: rgba(79, 195, 247, 0.2);
+            transform: translateY(-2px);
+        }
+
+        .loading {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            z-index: 200;
+        }
+
+        .loading-spinner {
+            width: 50px;
+            height: 50px;
+            border: 3px solid rgba(79, 195, 247, 0.3);
+            border-top: 3px solid #4FC3F7;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+            margin: 0 auto 20px;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        .error-message {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: rgba(255, 68, 68, 0.9);
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            z-index: 200;
+            backdrop-filter: blur(10px);
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        .fade-in {
+            animation: fadeIn 0.5s ease-in;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .pulse {
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+
+        /* Mobile responsiveness */
+        @media (max-width: 768px) {
+            .camera-overlay {
+                width: 240px;
+                height: 180px;
+                top: 10px;
+                right: 10px;
+            }
+
+            .header {
+                top: 10px;
+                left: 10px;
+                padding: 10px 15px;
+            }
+
+            .header h1 {
+                font-size: 1.2em;
+            }
+
+            .gesture-info {
+                bottom: 10px;
+                left: 10px;
+                right: 10px;
+                min-width: auto;
+            }
+
+            .controls {
+                top: 10px;
+                flex-wrap: wrap;
+            }
+
+            .control-btn {
+                padding: 8px 12px;
+                font-size: 0.9em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="main-view">
+            <!-- Header -->
+            <div class="header">
+                <h1>🎭 Gesture Puppets</h1>
+                <p>Make hand shadows to bring animals to life!</p>
+            </div>
+
+            <!-- Controls -->
+            <div class="controls">
+                <button class="control-btn" id="connect-btn">Connect</button>
+                <button class="control-btn" id="settings-btn">Settings</button>
+                <button class="control-btn" id="stats-btn">Stats</button>
+            </div>
+
+            <!-- Three.js Container -->
+            <div class="three-container" id="three-container"></div>
+
+            <!-- Camera Overlay -->
+            <div class="camera-overlay">
+                <img class="camera-feed" id="camera-feed" alt="Camera feed">
+                <div class="camera-status" id="camera-status">Connecting...</div>
+            </div>
+
+            <!-- Gesture Information -->
+            <div class="gesture-info">
+                <div class="gesture-display">
+                    <div class="gesture-icon" id="gesture-icon">🤖</div>
+                    <div class="gesture-text">
+                        <div class="gesture-name" id="gesture-name">Ready</div>
+                        <div class="gesture-confidence" id="gesture-confidence">Show me a hand gesture!</div>
+                    </div>
+                </div>
+                <div class="confidence-bar">
+                    <div class="confidence-fill" id="confidence-fill" style="width: 0%"></div>
+                </div>
+            </div>
+
+            <!-- Loading Screen -->
+            <div class="loading" id="loading-screen">
+                <div class="loading-spinner"></div>
+                <h2>Initializing Gesture Recognition</h2>
+                <p>Loading 3D models and connecting to camera...</p>
+            </div>
+
+            <!-- Error Message -->
+            <div class="error-message hidden" id="error-message">
+                <h3>⚠️ Connection Error</h3>
+                <p id="error-text">Unable to connect to gesture recognition server</p>
+                <button class="control-btn" onclick="location.reload()" style="margin-top: 15px;">
+                    Retry
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Three.js Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r155/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.155.0/examples/js/loaders/GLTFLoader.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.155.0/examples/js/controls/OrbitControls.js"></script>
+
+    <!-- Main Application Script -->
+    <script src="src/main.js"></script>
+</body>
+</html>

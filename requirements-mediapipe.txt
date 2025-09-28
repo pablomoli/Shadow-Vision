@@ -1,0 +1,22 @@
+# MediaPipe Bridge Requirements - Version Locked for Stability
+# Compatible with Python 3.11 and 3.12
+
+# Core MediaPipe and computer vision
+mediapipe==0.10.9
+opencv-python==4.8.1.78
+numpy==1.24.3
+
+# Machine learning and data processing
+scikit-learn==1.3.2
+joblib==1.3.2
+pandas==2.0.3
+
+# OSC communication for TouchDesigner
+python-osc==1.9.3
+
+# Additional utilities
+Pillow==10.0.1
+matplotlib==3.7.5
+
+# Optional: For advanced features
+scipy==1.11.4

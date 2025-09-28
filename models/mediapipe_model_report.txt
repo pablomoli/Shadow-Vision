@@ -1,0 +1,47 @@
+MediaPipe Hand Landmark Model Report
+=============================================
+
+Timestamp: 2025-09-27T22:20:56.784421
+Model Type: MediaPipe Ensemble (k-NN + RF + SVM)
+Feature Type: Real MediaPipe Hand Landmarks
+Training Samples: 1384
+Validation Samples: 149
+Feature Count: 60
+
+Performance Comparison:
+  Previous (Pixel-based): 81.1%
+  MediaPipe (Landmarks):  91.9%
+  Improvement: +10.8 percentage points
+
+MediaPipe Model Performance:
+  Accuracy: 0.919
+  F1-Score (Macro): 0.861
+  F1-Score (Weighted): 0.911
+  CV Mean: 0.983 ± 0.010
+
+Per-Class F1 Scores:
+  bird: 0.889
+  cat: 0.905
+  llama: 1.000
+  rabbit: 0.933
+  deer: 0.944
+  dog: 0.946
+  snail: 0.941
+  swan: 0.333
+
+Classification Report:
+              precision    recall  f1-score   support
+
+        bird      0.842     0.941     0.889        17
+         cat      0.950     0.864     0.905        22
+       llama      1.000     1.000     1.000         2
+      rabbit      1.000     0.875     0.933        16
+        deer      0.913     0.977     0.944        43
+         dog      0.897     1.000     0.946        35
+       snail      1.000     0.889     0.941         9
+        swan      1.000     0.200     0.333         5
+
+    accuracy                          0.919       149
+   macro avg      0.950     0.843     0.861       149
+weighted avg      0.925     0.919     0.911       149
+

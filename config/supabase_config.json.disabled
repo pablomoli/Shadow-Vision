@@ -1,0 +1,43 @@
+{
+  "database": {
+    "tables": {
+      "gesture_logs": {
+        "id": "uuid PRIMARY KEY DEFAULT gen_random_uuid()",
+        "timestamp": "timestamptz DEFAULT now()",
+        "gesture_detected": "text",
+        "confidence": "float",
+        "animation_triggered": "text",
+        "session_id": "uuid",
+        "user_agent": "text"
+      },
+      "training_metrics": {
+        "id": "uuid PRIMARY KEY DEFAULT gen_random_uuid()",
+        "timestamp": "timestamptz DEFAULT now()",
+        "epoch": "integer",
+        "train_loss": "float",
+        "train_accuracy": "float",
+        "val_loss": "float",
+        "val_accuracy": "float",
+        "model_version": "text"
+      },
+      "demo_sessions": {
+        "id": "uuid PRIMARY KEY DEFAULT gen_random_uuid()",
+        "start_time": "timestamptz DEFAULT now()",
+        "end_time": "timestamptz",
+        "total_gestures": "integer DEFAULT 0",
+        "successful_detections": "integer DEFAULT 0",
+        "user_feedback": "text"
+      }
+    },
+    "indexes": [
+      "CREATE INDEX idx_gesture_logs_timestamp ON gesture_logs(timestamp)",
+      "CREATE INDEX idx_training_metrics_epoch ON training_metrics(epoch)",
+      "CREATE INDEX idx_demo_sessions_start_time ON demo_sessions(start_time)"
+    ]
+  },
+  "rls_policies": {
+    "gesture_logs": "ENABLE ROW LEVEL SECURITY",
+    "training_metrics": "ENABLE ROW LEVEL SECURITY",
+    "demo_sessions": "ENABLE ROW LEVEL SECURITY"
+  }
+}
