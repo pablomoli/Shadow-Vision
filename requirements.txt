@@ -31,3 +31,6 @@ pyyaml>=6.0.0
 tqdm>=4.65.0
 matplotlib>=3.7.0
 scikit-learn>=1.3.0
+
+# TouchDesigner Integration
+python-osc>=1.8.0

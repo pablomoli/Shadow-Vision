@@ -394,6 +394,9 @@ class LiveDemoApp:
                     print("Failed to capture frame")
                     break
 
+                # Flip frame horizontally to match dataset format
+                frame = cv2.flip(frame, 1)
+
                 # Classify
                 result = self.classifier.predict_from_frame(frame)
 

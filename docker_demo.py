@@ -113,6 +113,9 @@ class DockerShadowVision:
                     logger.warning("Failed to read frame")
                     break
 
+                # Flip frame horizontally to match dataset format
+                frame = cv2.flip(frame, 1)
+
                 # Extract features and predict
                 try:
                     features = self.extractor.extract_features(frame)
@@ -195,6 +198,9 @@ class DockerShadowVision:
                 ret, frame = cap.read()
                 if not ret:
                     break
+
+                # Flip frame horizontally to match dataset format
+                frame = cv2.flip(frame, 1)
 
                 # Extract features and predict
                 try:

@@ -429,6 +429,10 @@ class AdvancedLiveDemoApp:
                     print("Failed to capture frame")
                     break
 
+                # Flip frame horizontally to match dataset format
+                # Dataset images are not mirrored, but camera default is mirrored
+                frame = cv2.flip(frame, 1)
+
                 # Classify with advanced model
                 result = self.classifier.predict_from_frame(frame)
 
