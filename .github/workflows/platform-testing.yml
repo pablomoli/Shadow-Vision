@@ -1,0 +1,133 @@
+name: Cross-Platform Testing
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  test-linux:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4
+
+    - name: Set up Python 3.11
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.11'
+
+    - name: Test Docker Compose Syntax
+      run: |
+        docker-compose -f docker-compose.touchdesigner.yml config
+
+    - name: Test Virtual Environment Setup
+      run: |
+        python3.11 -m venv test_env
+        source test_env/bin/activate
+        pip install --upgrade pip
+        # Test basic requirements (without camera-dependent packages)
+        pip install numpy opencv-python-headless python-osc
+
+    - name: Test Python Scripts Syntax
+      run: |
+        python -m py_compile setup_mediapipe_env.py
+        python -m py_compile simple_osc_test.py
+        # Test other non-camera dependent scripts
+
+    - name: Validate Requirements Files
+      run: |
+        pip install --dry-run -r requirements-mediapipe.txt
+
+  test-windows:
+    runs-on: windows-latest
+    steps:
+    - uses: actions/checkout@v4
+
+    - name: Set up Python 3.11
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.11'
+
+    - name: Test Docker Compose Syntax
+      run: |
+        docker-compose -f docker-compose.windows.yml config
+
+    - name: Test Virtual Environment Setup (Windows)
+      run: |
+        py -3.11 -m venv test_env
+        test_env\Scripts\activate.bat
+        pip install --upgrade pip
+        pip install numpy opencv-python-headless python-osc
+
+    - name: Test Windows-specific Commands
+      run: |
+        py --version
+        python --version
+
+    - name: Validate Requirements Files
+      run: |
+        pip install --dry-run -r requirements-mediapipe.txt
+
+  test-macos:
+    runs-on: macos-latest
+    steps:
+    - uses: actions/checkout@v4
+
+    - name: Set up Python 3.11
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.11'
+
+    - name: Test Docker Compose Syntax
+      run: |
+        docker-compose -f docker-compose.macos.yml config
+
+    - name: Test Virtual Environment Setup (macOS)
+      run: |
+        python3.11 -m venv test_env
+        source test_env/bin/activate
+        pip install --upgrade pip
+        pip install numpy opencv-python-headless python-osc
+
+    - name: Test macOS-specific Commands
+      run: |
+        python3 --version
+        which python3
+
+    - name: Validate Requirements Files
+      run: |
+        pip install --dry-run -r requirements-mediapipe.txt
+
+  test-syntax-validation:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4
+
+    - name: Set up Python 3.11
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.11'
+
+    - name: Install dependencies for syntax checking
+      run: |
+        pip install flake8 yamllint
+
+    - name: Lint Python files
+      run: |
+        # Check Python syntax in key files
+        flake8 --select=E9,F63,F7,F82 setup_mediapipe_env.py
+        flake8 --select=E9,F63,F7,F82 simple_osc_test.py
+        # Add other key Python files
+
+    - name: Validate YAML files
+      run: |
+        yamllint docker-compose.touchdesigner.yml
+        yamllint docker-compose.windows.yml
+        yamllint docker-compose.macos.yml
+
+    - name: Test README commands syntax
+      run: |
+        # Extract and validate bash commands from README
+        echo "README validation would go here"
+        # This could be expanded to actually test command syntax

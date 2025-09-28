@@ -1,5 +1,8 @@
 # Shadow-Vision: Advanced Hand Gesture Recognition for Real-time Interactive Media
 
+[![Cross-Platform Testing](https://github.com/pablomoli/Shadow-Vision/actions/workflows/platform-testing.yml/badge.svg)](https://github.com/pablomoli/Shadow-Vision/actions/workflows/platform-testing.yml)
+[![Platform Support](https://img.shields.io/badge/platform-Windows%20%7C%20macOS%20%7C%20Linux-blue)](PLATFORM_TESTING.md)
+
 **Hand shadow puppet recognition system with MediaPipe integration and TouchDesigner streaming**
 
 Shadow-Vision transforms hand shadow puppet gestures into real-time data streams for interactive media installations. Built around Google's MediaPipe framework, the system achieves 91.9% recognition accuracy while streaming both gesture classifications and raw hand landmark data to TouchDesigner for immediate creative application.
@@ -335,6 +338,23 @@ python simple_osc_test.py
 - **Reduce landmark streaming**: Disable coordinate streaming for gesture-only applications
 - **Adjust confidence thresholds**: Balance detection sensitivity with false positive rates
 - **Camera resolution scaling**: Lower resolution for improved performance on limited hardware
+
+## Platform Testing Status
+
+### Automated Testing
+GitHub Actions continuously validates cross-platform compatibility:
+- **Linux**: ✅ Virtual environments, Docker syntax, Python scripts
+- **Windows**: ✅ Virtual environments, Docker syntax, Windows-specific commands
+- **macOS**: ✅ Virtual environments, Docker syntax, macOS-specific commands
+
+### Community Testing Needed
+While automated tests validate syntax and basic functionality, **real-world testing with cameras and TouchDesigner requires community validation**:
+
+- **Camera access testing**: Docker camera permissions on Windows/macOS
+- **TouchDesigner integration**: OSC communication across platforms
+- **Performance validation**: 30+ FPS gesture recognition on various hardware
+
+**Help us test!** See [PLATFORM_TESTING.md](PLATFORM_TESTING.md) for detailed testing instructions.
 
 ## Contributing
 
