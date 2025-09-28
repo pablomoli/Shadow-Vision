@@ -1,0 +1,49 @@
+version: '3.8'
+
+# macOS-specific Docker Compose configuration
+# Optimized for Docker Desktop on macOS with camera access
+
+services:
+  # MediaPipe TouchDesigner Bridge Service (macOS)
+  mediapipe-bridge:
+    build:
+      context: .
+      dockerfile: Dockerfile.bridge
+    container_name: mediapipe_touchdesigner_bridge
+    ports:
+      - "7000:7000"  # OSC port for TouchDesigner communication
+    volumes:
+      - ./backend:/app/backend
+      - ./models:/app/models
+      - ./data:/app/data
+      - ./config:/app/config
+      - .:/app/scripts
+    environment:
+      - PYTHONPATH=/app
+      - CAMERA_INDEX=0  # macOS camera index
+    # Note: Camera access on macOS requires Docker Desktop camera permissions
+    # Enable camera access in Docker Desktop → Preferences → Resources → File Sharing
+    restart: unless-stopped
+    command: python enhanced_mediapipe_touchdesigner_bridge.py
+
+  # Alternative: Standard bridge without enhancements
+  standard-bridge:
+    build:
+      context: .
+      dockerfile: Dockerfile.bridge
+    container_name: standard_mediapipe_bridge
+    ports:
+      - "7001:7000"  # Alternative OSC port
+    volumes:
+      - ./backend:/app/backend
+      - ./models:/app/models
+      - ./data:/app/data
+      - ./config:/app/config
+    environment:
+      - PYTHONPATH=/app
+      - CAMERA_INDEX=0
+    profiles: ["standard"]  # Only run when explicitly requested
+    command: python mediapipe_touchdesigner_bridge.py
+
+volumes:
+  models_data:

@@ -67,22 +67,63 @@ The system recognizes eight distinct shadow puppet gestures with the following a
 ## Quick Deployment
 
 ### Docker Setup (Recommended)
+
 ```bash
 git clone https://github.com/pablomoli/Shadow-Vision.git
 cd Shadow-Vision
+```
 
-# Start MediaPipe bridge with TouchDesigner integration
+**Linux:**
+```bash
+# Full camera access and GUI support
 docker-compose -f docker-compose.touchdesigner.yml up --build mediapipe-bridge
 ```
 
-### Development Environment
-```bash
-# Automated environment setup
-python setup_mediapipe_env.py
+**Windows:**
+```cmd
+# Platform-optimized configuration
+docker-compose -f docker-compose.windows.yml up --build mediapipe-bridge
+```
 
-# Manual setup for MediaPipe compatibility
+**macOS:**
+```bash
+# Platform-optimized configuration
+docker-compose -f docker-compose.macos.yml up --build mediapipe-bridge
+```
+
+**Platform-Specific Requirements:**
+- **Windows**: Ensure Docker Desktop has camera access permissions enabled
+- **macOS**: Enable camera access in Docker Desktop → Preferences → Resources
+- **Linux**: Native `/dev/video0` device mapping (no additional setup required)
+
+### Development Environment
+
+**Automated Setup (All Platforms)**
+```bash
+# Cross-platform automated setup
+python setup_mediapipe_env.py
+```
+
+**Manual Setup**
+
+*Linux/macOS:*
+```bash
 python3.11 -m venv mediapipe_env
-source mediapipe_env/bin/activate  # Linux/Mac
+source mediapipe_env/bin/activate
+pip install -r requirements-mediapipe.txt
+```
+
+*Windows:*
+```cmd
+py -3.11 -m venv mediapipe_env
+mediapipe_env\Scripts\activate.bat
+pip install -r requirements-mediapipe.txt
+```
+
+*Alternative Windows (PowerShell):*
+```powershell
+python -m venv mediapipe_env
+mediapipe_env\Scripts\Activate.ps1
 pip install -r requirements-mediapipe.txt
 ```
 
@@ -235,12 +276,36 @@ docker-compose -f docker-compose.touchdesigner.yml up mediapipe-bridge
 ```
 
 ### Camera Access Issues
+
+**All Platforms:**
 ```bash
 # Test camera availability
 python -c "import cv2; print('Camera:', cv2.VideoCapture(0).isOpened())"
+```
 
-# Linux: Add user to video group
+**Linux:**
+```bash
+# Add user to video group for camera permissions
 sudo usermod -a -G video $USER
+# Then logout and login again
+```
+
+**Windows:**
+- Check camera permissions in Windows Settings → Privacy → Camera
+- Ensure Docker Desktop has camera access enabled
+- Try different camera indices (0, 1, 2) if default doesn't work
+
+**macOS:**
+- Enable camera access in System Preferences → Security & Privacy → Camera
+- Grant Docker Desktop camera permissions
+- Restart Docker Desktop after enabling permissions
+
+**Docker-Specific Issues:**
+```bash
+# Windows/macOS: Use platform-specific compose files
+docker-compose -f docker-compose.windows.yml up mediapipe-bridge  # Windows
+docker-compose -f docker-compose.macos.yml up mediapipe-bridge    # macOS
+docker-compose -f docker-compose.touchdesigner.yml up mediapipe-bridge  # Linux
 ```
 
 ### TouchDesigner Connection
