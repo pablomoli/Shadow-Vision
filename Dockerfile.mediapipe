@@ -1,0 +1,41 @@
+# Dockerfile for MediaPipe Processing (Python 3.12)
+FROM python:3.12-slim
+
+# Set working directory
+WORKDIR /app
+
+# Install system dependencies for MediaPipe
+RUN apt-get update && apt-get install -y \
+    libglib2.0-0 \
+    libsm6 \
+    libxext6 \
+    libxrender-dev \
+    libgomp1 \
+    libgtk-3-0 \
+    libavcodec-dev \
+    libavformat-dev \
+    libswscale-dev \
+    libv4l-dev \
+    libjpeg-dev \
+    libpng-dev \
+    libtiff-dev \
+    libatlas-base-dev \
+    && rm -rf /var/lib/apt/lists/*
+
+# Install MediaPipe and dependencies
+RUN pip install --no-cache-dir \
+    mediapipe>=0.10.0 \
+    opencv-python>=4.8.0 \
+    numpy>=1.24.0 \
+    scikit-learn>=1.3.0 \
+    joblib
+
+# Copy MediaPipe processing scripts
+COPY backend/data/mediapipe_feature_extractor.py ./
+COPY backend/data/mediapipe_train_classifier.py ./
+
+# Expose port for API
+EXPOSE 8002
+
+# Default command
+CMD ["python", "mediapipe_feature_extractor.py"]

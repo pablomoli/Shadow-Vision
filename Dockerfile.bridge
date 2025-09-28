@@ -1,0 +1,61 @@
+# Dockerfile for MediaPipe TouchDesigner Bridge (Python 3.11)
+FROM python:3.11-slim
+
+# Set working directory
+WORKDIR /app
+
+# Install system dependencies for MediaPipe and camera access
+RUN apt-get update && apt-get install -y \
+    libglib2.0-0 \
+    libsm6 \
+    libxext6 \
+    libxrender-dev \
+    libgomp1 \
+    libgtk-3-0 \
+    libavcodec-dev \
+    libavformat-dev \
+    libswscale-dev \
+    libv4l-dev \
+    libjpeg-dev \
+    libpng-dev \
+    libtiff-dev \
+    libatlas-base-dev \
+    libgl1-mesa-glx \
+    libgstreamer1.0-0 \
+    gstreamer1.0-plugins-base \
+    gstreamer1.0-plugins-good \
+    gstreamer1.0-plugins-bad \
+    gstreamer1.0-plugins-ugly \
+    gstreamer1.0-libav \
+    gstreamer1.0-tools \
+    gstreamer1.0-x \
+    gstreamer1.0-alsa \
+    gstreamer1.0-gl \
+    gstreamer1.0-gtk3 \
+    gstreamer1.0-qt5 \
+    gstreamer1.0-pulseaudio \
+    && rm -rf /var/lib/apt/lists/*
+
+# Copy requirements and install Python dependencies
+COPY requirements-mediapipe.txt /app/
+RUN pip install --no-cache-dir -r requirements-mediapipe.txt
+
+# Copy bridge scripts and backend
+COPY mediapipe_touchdesigner_bridge.py /app/
+COPY enhanced_mediapipe_touchdesigner_bridge.py /app/
+COPY backend/ /app/backend/
+COPY models/ /app/models/
+COPY config/ /app/config/
+
+# Set Python path
+ENV PYTHONPATH=/app
+
+# Expose OSC port for TouchDesigner
+EXPOSE 7000
+
+# Create non-root user for security
+RUN useradd -m -s /bin/bash bridge_user
+USER bridge_user
+
+# Default command
+CMD ["python", "enhanced_mediapipe_touchdesigner_bridge.py"]

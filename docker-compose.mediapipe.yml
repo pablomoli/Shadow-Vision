@@ -1,0 +1,36 @@
+version: '3.8'
+
+services:
+  # Your existing Python 3.13 system (unchanged)
+  shadow-vision:
+    build:
+      context: .
+      dockerfile: Dockerfile.backend
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./backend:/app/backend
+      - ./config:/app/config
+      - ./models:/app/models
+      - ./data:/app/data
+    environment:
+      - PYTHONPATH=/app
+    command: python backend/cv_pipeline/advanced_realtime_inference.py
+
+  # NEW: MediaPipe processing service (Python 3.12)
+  mediapipe-processor:
+    build:
+      context: .
+      dockerfile: Dockerfile.mediapipe
+    ports:
+      - "8002:8002"
+    volumes:
+      - ./backend/data:/app/scripts
+      - ./data:/app/data
+      - ./models:/app/models
+    environment:
+      - PYTHONPATH=/app
+    command: python mediapipe_train_classifier.py
+
+volumes:
+  models_data:
